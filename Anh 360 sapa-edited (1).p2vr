@@ -1674,6 +1674,7 @@
           <id>Point04</id>
           <linktype>node</linktype>
           <linksubtype>unknown</linksubtype>
+          <url>{node5}</url>
           <skinid>ht_node__2_vr</skinid>
           <type>point</type>
           <distance>0</distance>

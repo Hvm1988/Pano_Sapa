@@ -301,7 +301,7 @@
       <hotspot description="" target="" id="Point01" title="Sân khấu quảng trường" url="{node3}" pan="-5.11" skinid="ht_node" tilt="-3.89"/>
       <hotspot description="" target="" id="Point02" title="Sảnh quảng trường" url="{node1}" pan="-61.34" skinid="ht_node" tilt="0.97"/>
       <hotspot description="" target="" id="Point03" title="Bia quảng trường" url="{node4}" pan="-98.65" skinid="ht_node" tilt="1.66"/>
-      <hotspot description="" target="" id="Point04" title="" url="" pan="-280.56" skinid="ht_node__2_vr" tilt="8.79"/>
+      <hotspot description="" target="" id="Point04" title="" url="{node5}" pan="-280.56" skinid="ht_node__2_vr" tilt="8.79"/>
       <hotspot description="Thưa quý anh chị và các bạn, trước mặt chúng ta là Nhà thờ đá Sa Pa – một trong những biểu tượng lâu đời nhất của thị trấn sương mù này. Công trình được người Pháp xây dựng từ đầu thế kỷ 20, với lối kiến trúc Gothic châu Âu rất rõ nét: mái vòm nhọn, tháp chuông cao vút và những bức tường đá xếp chồng lên nhau tạo cảm giác vừa cổ kính, vừa vững chãi giữa núi rừng Tây Bắc.&#xa;&#xa;Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân, mà còn là trung tâm của rất nhiều hoạt động văn hóa, lễ hội, đặc biệt là vào dịp cuối tuần, Lễ Giáng sinh hay những dịp lễ lớn trong năm. Buổi tối, khi ánh đèn lên và sương phủ mờ, khung cảnh quanh nhà thờ trở nên rất lãng mạn, là điểm chụp hình yêu thích của du khách. Một lát nữa, mời quý anh chị tự do tham quan, chụp ảnh và cảm nhận không khí rất riêng của quảng trường Sa Pa và nhà thờ đá nhé." target="_blank" id="Point05" title="" url="" pan="-251.93" skinid="ht_node_vr_1" tilt="8.13"/>
     </hotspots>
     <media/>
