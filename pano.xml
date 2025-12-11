@@ -1,549 +1,553 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour appversion="7.1.9" hassounds="0" apprev="20995" start="node16">
+<tour apprev="20995" hassounds="0" appversion="7.1.9" start="node16">
   <panorama id="node16">
-    <input leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:17 PM" customnodeid="" author="" source="" nodeid="node16" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 1" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sảnh quảng trường" url="{node1}" pan="-68.32" skinid="ht_node" tilt="-47.54"/>
-      <hotspot description="" target="" id="Point02" title="Ngã tư quảng trường" url="{node2}" pan="-107.5" skinid="ht_node" tilt="-43.35"/>
-      <hotspot description="" target="" id="Point03" title="Sân khấu quảng trường" url="{node3}" pan="-89.9" skinid="ht_node" tilt="-41.88"/>
-      <hotspot description="" target="" id="Point04" title="Bia quảng trường" url="{node4}" pan="-54.73" skinid="ht_node" tilt="-41.78"/>
-      <hotspot description="" target="" id="Point05" title="Nhà thờ đá" url="{node5}" pan="-70.06" skinid="ht_node" tilt="-34.81"/>
-      <hotspot description="" target="" id="Point06" title="Trên cao 4" url="{node19}" pan="-63.25" skinid="flycam_hotspot" tilt="15.36"/>
-      <hotspot description="" target="" id="Point07" title="Trên cao 2" url="{node17}" pan="-81" skinid="flycam_hotspot" tilt="-1.05"/>
-      <hotspot description="" target="" id="Point08" title="Trên cao 3" url="{node18}" pan="-140.04" skinid="flycam_hotspot" tilt="-2.25"/>
-      <hotspot description="" target="" id="Point09" title="Trên cao 6" url="{node21}" pan="-226.46" skinid="ht_node" tilt="25.91"/>
-      <hotspot description="" target="" id="Point10" title="Trên cao 7" url="{node22}" pan="-14.26" skinid="flycam_hotspot" tilt="10.9"/>
-      <hotspot description="" target="" id="Point11" title="Chợ đêm Sapa" url="{node12}" pan="-16.59" skinid="ht_node" tilt="-3.98"/>
+    <userdata heading="0" title="Trên cao 1" customnodeid="" author="" nodeid="node16" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:17 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sảnh quảng trường" description="" tilt="-47.54" target="" pan="-68.32" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point02" title="Ngã tư quảng trường" description="" tilt="-43.35" target="" pan="-107.5" skinid="ht_node" url="{node2}"/>
+      <hotspot id="Point03" title="Sân khấu quảng trường" description="" tilt="-41.88" target="" pan="-89.9" skinid="ht_node" url="{node3}"/>
+      <hotspot id="Point04" title="Bia quảng trường" description="" tilt="-41.78" target="" pan="-54.73" skinid="ht_node" url="{node4}"/>
+      <hotspot id="Point05" title="Nhà thờ đá" description="" tilt="-34.81" target="" pan="-70.06" skinid="ht_node" url="{node5}"/>
+      <hotspot id="Point06" title="Trên cao 4" description="" tilt="15.36" target="" pan="-63.25" skinid="flycam_hotspot" url="{node19}"/>
+      <hotspot id="Point07" title="Trên cao 2" description="" tilt="-1.05" target="" pan="-81" skinid="flycam_hotspot" url="{node17}"/>
+      <hotspot id="Point08" title="Trên cao 3" description="" tilt="-2.25" target="" pan="-140.04" skinid="flycam_hotspot" url="{node18}"/>
+      <hotspot id="Point09" title="Trên cao 6" description="" tilt="25.91" target="" pan="-226.46" skinid="ht_node" url="{node21}"/>
+      <hotspot id="Point10" title="Trên cao 7" description="" tilt="10.9" target="" pan="-14.26" skinid="flycam_hotspot" url="{node22}"/>
+      <hotspot id="Point11" title="Chợ đêm Sapa" description="" tilt="-3.98" target="" pan="-16.59" skinid="ht_node" url="{node12}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node17">
-    <input leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 11:15 AM" customnodeid="" author="" source="" nodeid="node17" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 2" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sảnh quảng trường" url="{node1}" pan="-171.82" skinid="ht_node" tilt="-27.8"/>
-      <hotspot description="" target="" id="Point02" title="Trên cao 7" url="{node22}" pan="-175.15" skinid="flycam_hotspot" tilt="9.2"/>
-      <hotspot description="" target="" id="Point03" title="Trên cao 3" url="{node18}" pan="-157.18" skinid="flycam_hotspot" tilt="2.16"/>
+    <userdata heading="0" title="Trên cao 2" customnodeid="" author="" nodeid="node17" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 11:15 AM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sảnh quảng trường" description="" tilt="-27.8" target="" pan="-171.82" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point02" title="Trên cao 7" description="" tilt="9.2" target="" pan="-175.15" skinid="flycam_hotspot" url="{node22}"/>
+      <hotspot id="Point03" title="Trên cao 3" description="" tilt="2.16" target="" pan="-157.18" skinid="flycam_hotspot" url="{node18}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node18">
-    <input leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:19 PM" customnodeid="" author="" source="" nodeid="node18" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 3" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sảnh quảng trường" url="{node1}" pan="-55.67" skinid="ht_node" tilt="-72.66"/>
-      <hotspot description="" target="" id="Point02" title="Sân khấu quảng trường" url="{node3}" pan="-256.24" skinid="ht_node" tilt="-59.78"/>
-      <hotspot description="" target="" id="Point03" title="Ngã tư quảng trường" url="{node2}" pan="-282.11" skinid="ht_node" tilt="-42.71"/>
-      <hotspot description="" target="" id="Point04" title="Bia quảng trường" url="{node4}" pan="-92.06" skinid="ht_node" tilt="-50.06"/>
-      <hotspot description="" target="" id="Point05" title="Nhà thờ đá" url="{node5}" pan="-154.08" skinid="ht_node" tilt="-51.38"/>
-      <hotspot description="" target="" id="Point06" title="Trên cao 7" url="{node22}" pan="-110.63" skinid="flycam_hotspot" tilt="5.49"/>
-      <hotspot description="" target="" id="Point07" title="Trên cao 1" url="{node16}" pan="350.87" skinid="flycam_hotspot" tilt="26.74"/>
+    <userdata heading="0" title="Trên cao 3" customnodeid="" author="" nodeid="node18" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:19 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sảnh quảng trường" description="" tilt="-72.66" target="" pan="-55.67" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point02" title="Sân khấu quảng trường" description="" tilt="-59.78" target="" pan="-256.24" skinid="ht_node" url="{node3}"/>
+      <hotspot id="Point03" title="Ngã tư quảng trường" description="" tilt="-42.71" target="" pan="-282.11" skinid="ht_node" url="{node2}"/>
+      <hotspot id="Point04" title="Bia quảng trường" description="" tilt="-50.06" target="" pan="-92.06" skinid="ht_node" url="{node4}"/>
+      <hotspot id="Point05" title="Nhà thờ đá" description="" tilt="-51.38" target="" pan="-154.08" skinid="ht_node" url="{node5}"/>
+      <hotspot id="Point06" title="Trên cao 7" description="" tilt="5.49" target="" pan="-110.63" skinid="flycam_hotspot" url="{node22}"/>
+      <hotspot id="Point07" title="Trên cao 1" description="" tilt="26.74" target="" pan="350.87" skinid="flycam_hotspot" url="{node16}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node19">
-    <input leveltileurl="tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:19 PM" customnodeid="" author="" source="" nodeid="node19" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 4" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sảnh quảng trường" url="{node1}" pan="-19.74" skinid="ht_node" tilt="-38.5"/>
-      <hotspot description="" target="" id="Point02" title="Quảng trường hồ Sapa" url="{node6}" pan="-90.84" skinid="ht_node" tilt="-42.58"/>
-      <hotspot description="" target="" id="Point03" title="Chợ đêm Sapa" url="{node12}" pan="-157.49" skinid="ht_node" tilt="-19.97"/>
-      <hotspot description="" target="" id="Point04" title="Trên cao 3" url="{node18}" pan="-58.33" skinid="flycam_hotspot" tilt="18.28"/>
-      <hotspot description="" target="" id="Point05" title="Trên cao 1" url="{node16}" pan="-347.57" skinid="flycam_hotspot" tilt="17.81"/>
+    <userdata heading="0" title="Trên cao 4" customnodeid="" author="" nodeid="node19" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:19 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sảnh quảng trường" description="" tilt="-38.5" target="" pan="-19.74" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point02" title="Quảng trường hồ Sapa" description="" tilt="-42.58" target="" pan="-90.84" skinid="ht_node" url="{node6}"/>
+      <hotspot id="Point03" title="Chợ đêm Sapa" description="" tilt="-19.97" target="" pan="-157.49" skinid="ht_node" url="{node12}"/>
+      <hotspot id="Point04" title="Trên cao 3" description="" tilt="18.28" target="" pan="-58.33" skinid="flycam_hotspot" url="{node18}"/>
+      <hotspot id="Point05" title="Trên cao 1" description="" tilt="17.81" target="" pan="-347.57" skinid="flycam_hotspot" url="{node16}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node21">
-    <input leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:20 PM" customnodeid="" author="" source="" nodeid="node21" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 6" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 3" url="{node18}" pan="-232.94" skinid="flycam_hotspot" tilt="0.26"/>
-      <hotspot description="" target="" id="Point02" title="Trên cao 2" url="{node17}" pan="-197.67" skinid="flycam_hotspot" tilt="3.23"/>
+    <userdata heading="0" title="Trên cao 6" customnodeid="" author="" nodeid="node21" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:20 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 3" description="" tilt="0.26" target="" pan="-232.94" skinid="flycam_hotspot" url="{node18}"/>
+      <hotspot id="Point02" title="Trên cao 2" description="" tilt="3.23" target="" pan="-197.67" skinid="flycam_hotspot" url="{node17}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node22">
-    <input leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:20 PM" customnodeid="" author="" source="" nodeid="node22" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trên cao 7" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 3" url="{node18}" pan="-242.01" skinid="flycam_hotspot" tilt="9.72"/>
-      <hotspot description="" target="" id="Point02" title="Quảng trường hồ Sapa" url="{node6}" pan="-200.3" skinid="ht_node" tilt="-54.36"/>
-      <hotspot description="" target="" id="Point03" title="Cổng con đường tình yêu" url="{node9}" pan="-70.03" skinid="ht_node" tilt="-14.49"/>
-      <hotspot description="" target="" id="Point04" title="Chợ đêm Sapa" url="{node12}" pan="-84.86" skinid="ht_node" tilt="-4.35"/>
+    <userdata heading="0" title="Trên cao 7" customnodeid="" author="" nodeid="node22" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:20 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 3" description="" tilt="9.72" target="" pan="-242.01" skinid="flycam_hotspot" url="{node18}"/>
+      <hotspot id="Point02" title="Quảng trường hồ Sapa" description="" tilt="-54.36" target="" pan="-200.3" skinid="ht_node" url="{node6}"/>
+      <hotspot id="Point03" title="Cổng con đường tình yêu" description="" tilt="-14.49" target="" pan="-70.03" skinid="ht_node" url="{node9}"/>
+      <hotspot id="Point04" title="Chợ đêm Sapa" description="" tilt="-4.35" target="" pan="-84.86" skinid="ht_node" url="{node12}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node1">
-    <input leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 1:50 PM" customnodeid="" author="" source="" nodeid="node1" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Sảnh quảng trường" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 3" url="{node18}" pan="-266.14" skinid="flycam_hotspot" tilt="71.15"/>
-      <hotspot description="" target="" id="Point02" title="Sân khấu quảng trường" url="{node3}" pan="-266.78" skinid="ht_node" tilt="-4.28"/>
-      <hotspot description="" target="" id="Point03" title="Nhà thờ đá" url="{node5}" pan="-191.95" skinid="ht_node" tilt="0.84"/>
-      <hotspot description="" target="" id="Point04" title="Bia quảng trường" url="{node4}" pan="-134.83" skinid="ht_node" tilt="-0.16"/>
+    <userdata heading="0" title="Sảnh quảng trường" customnodeid="" author="" nodeid="node1" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 1:50 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 3" description="" tilt="71.15" target="" pan="-266.14" skinid="flycam_hotspot" url="{node18}"/>
+      <hotspot id="Point02" title="Sân khấu quảng trường" description="" tilt="-4.28" target="" pan="-266.78" skinid="ht_node" url="{node3}"/>
+      <hotspot id="Point03" title="Nhà thờ đá" description="" tilt="0.84" target="" pan="-191.95" skinid="ht_node" url="{node5}"/>
+      <hotspot id="Point04" title="Bia quảng trường" description="" tilt="-0.16" target="" pan="-134.83" skinid="ht_node" url="{node4}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node2">
-    <input leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="" customnodeid="" author="" source="" nodeid="node2" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Ngã tư quảng trường" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sân khấu quảng trường" url="{node3}" pan="-103.63" skinid="ht_node" tilt="-0.31"/>
+    <userdata heading="0" title="Ngã tư quảng trường" customnodeid="" author="" nodeid="node2" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sân khấu quảng trường" description="" tilt="-0.31" target="" pan="-103.63" skinid="ht_node" url="{node3}"/>
+      <hotspot id="Point02" title="" description="Quý khách đang đứng tại ngã tư Quảng Trường Sapa, ngay trước cổng Sapa Plaza, một trong những điểm giao thoa sôi động nhất của trung tâm thị trấn. Từ vị trí này, quý khách có thể quan sát nhịp sống đặc trưng của Sapa: bên trái là Nhà thờ Đá – biểu tượng cổ kính của vùng núi Tây Bắc; phía trước là khu quảng trường trung tâm, nơi thường xuyên diễn ra các hoạt động văn hóa, lễ hội và biểu diễn văn nghệ của người H’Mông, Dao. Còn phía sau lưng chúng ta là khu vực mua sắm và dịch vụ hiện đại của Sapa Plaza.&#xa;&#xa;Khi đứng tại ngã tư này, quý khách sẽ cảm nhận rõ sự hòa quyện giữa vẻ đẹp truyền thống và nét hiện đại của Sapa. Đây cũng là điểm hẹn quen thuộc trước mỗi hành trình khám phá thị trấn mờ sương. Hướng tiếp theo, chúng ta sẽ di chuyển về phía…" tilt="-14.47" target="" pan="-226.27" skinid="ht_node__2_vr" url="{node2}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node3">
-    <input leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 1:53 PM" customnodeid="" author="" source="" nodeid="node3" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Sân khấu quảng trường" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Ngã tư quảng trường" url="{node2}" pan="-320.89" skinid="ht_node" tilt="2.25"/>
-      <hotspot description="" target="" id="Point02" title="Sảnh quảng trường" url="{node1}" pan="-87.57" skinid="ht_node" tilt="5.7"/>
+    <userdata heading="0" title="Sân khấu quảng trường" customnodeid="" author="" nodeid="node3" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 1:53 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Ngã tư quảng trường" description="" tilt="2.25" target="" pan="-320.89" skinid="ht_node" url="{node2}"/>
+      <hotspot id="Point02" title="Sảnh quảng trường" description="" tilt="5.7" target="" pan="-87.57" skinid="ht_node" url="{node1}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node4">
-    <input leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 1:55 PM" customnodeid="" author="" source="" nodeid="node4" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Bia quảng trường" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sảnh quảng trường" url="{node1}" pan="-46.27" skinid="ht_node" tilt="-1.04"/>
-      <hotspot description="" target="" id="Point02" title="Nhà thờ đá" url="{node5}" pan="-0.63" skinid="ht_node" tilt="-0.68"/>
+    <userdata heading="0" title="Bia quảng trường" customnodeid="" author="" nodeid="node4" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 1:55 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sảnh quảng trường" description="" tilt="-1.04" target="" pan="-46.27" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point02" title="Nhà thờ đá" description="" tilt="-0.68" target="" pan="-0.63" skinid="ht_node" url="{node5}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node5">
-    <input leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 1:57 PM" customnodeid="" author="" source="" nodeid="node5" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Nhà thờ đá" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Sân khấu quảng trường" url="{node3}" pan="-5.11" skinid="ht_node" tilt="-3.89"/>
-      <hotspot description="" target="" id="Point02" title="Sảnh quảng trường" url="{node1}" pan="-61.34" skinid="ht_node" tilt="0.97"/>
-      <hotspot description="" target="" id="Point03" title="Bia quảng trường" url="{node4}" pan="-98.65" skinid="ht_node" tilt="1.66"/>
-      <hotspot description="Thưa quý anh chị và các bạn, trước mặt chúng ta là Nhà thờ đá Sa Pa – một trong những biểu tượng lâu đời nhất của thị trấn sương mù này. Công trình được người Pháp xây dựng từ đầu thế kỷ 20, với lối kiến trúc Gothic châu Âu rất rõ nét: mái vòm nhọn, tháp chuông cao vút và những bức tường đá xếp chồng lên nhau tạo cảm giác vừa cổ kính, vừa vững chãi giữa núi rừng Tây Bắc.&#xa;&#xa;Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân, mà còn là trung tâm của rất nhiều hoạt động văn hóa, lễ hội, đặc biệt là vào dịp cuối tuần, Lễ Giáng sinh hay những dịp lễ lớn trong năm. Buổi tối, khi ánh đèn lên và sương phủ mờ, khung cảnh quanh nhà thờ trở nên rất lãng mạn, là điểm chụp hình yêu thích của du khách. Một lát nữa, mời quý anh chị tự do tham quan, chụp ảnh và cảm nhận không khí rất riêng của quảng trường Sa Pa và nhà thờ đá nhé." target="" id="Point05" title="" url="{node5}" pan="-280.25" skinid="ht_node__2_vr" tilt="8.86"/>
+    <userdata heading="0" title="Nhà thờ đá" customnodeid="" author="" nodeid="node5" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 1:57 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Sân khấu quảng trường" description="" tilt="-3.89" target="" pan="-5.11" skinid="ht_node" url="{node3}"/>
+      <hotspot id="Point02" title="Sảnh quảng trường" description="" tilt="0.97" target="" pan="-61.34" skinid="ht_node" url="{node1}"/>
+      <hotspot id="Point03" title="Bia quảng trường" description="" tilt="1.66" target="" pan="-98.65" skinid="ht_node" url="{node4}"/>
+      <hotspot id="Point05" title="" description="Thưa quý anh chị và các bạn, trước mặt chúng ta là Nhà thờ đá Sa Pa – một trong những biểu tượng lâu đời nhất của thị trấn sương mù này. Công trình được người Pháp xây dựng từ đầu thế kỷ 20, với lối kiến trúc Gothic châu Âu rất rõ nét: mái vòm nhọn, tháp chuông cao vút và những bức tường đá xếp chồng lên nhau tạo cảm giác vừa cổ kính, vừa vững chãi giữa núi rừng Tây Bắc.&#xa;&#xa;Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân, mà còn là trung tâm của rất nhiều hoạt động văn hóa, lễ hội, đặc biệt là vào dịp cuối tuần, Lễ Giáng sinh hay những dịp lễ lớn trong năm. Buổi tối, khi ánh đèn lên và sương phủ mờ, khung cảnh quanh nhà thờ trở nên rất lãng mạn, là điểm chụp hình yêu thích của du khách. Một lát nữa, mời quý anh chị tự do tham quan, chụp ảnh và cảm nhận không khí rất riêng của quảng trường Sa Pa và nhà thờ đá nhé." tilt="8.86" target="" pan="-280.25" skinid="ht_node__2_vr" url="{node5}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node6">
-    <input leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:00 PM" customnodeid="" author="" source="" nodeid="node6" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Quảng trường hồ Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 7" url="{node22}" pan="-90.64" skinid="flycam_hotspot" tilt="73.57"/>
-      <hotspot description="" target="" id="Point02" title="Vườn hoa hồ Sapa" url="{node7}" pan="-138.18" skinid="ht_node" tilt="0.19"/>
+    <userdata heading="0" title="Quảng trường hồ Sapa" customnodeid="" author="" nodeid="node6" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:00 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 7" description="" tilt="73.57" target="" pan="-90.64" skinid="flycam_hotspot" url="{node22}"/>
+      <hotspot id="Point02" title="Vườn hoa hồ Sapa" description="" tilt="0.19" target="" pan="-138.18" skinid="ht_node" url="{node7}"/>
+      <hotspot id="Point03" title="" description="Quý khách đang có mặt tại khu vực Hồ Sapa, một trong những không gian thư giãn và ngắm cảnh đẹp nhất của thị trấn. Phía trước chúng ta là Quảng trường Hồ Sapa, nơi du khách thường dừng chân để nhìn ra mặt nước phẳng lặng, phản chiếu dãy núi Hoàng Liên hùng vĩ phía xa. Không gian ở đây luôn mang một vẻ yên bình rất đặc trưng của Sapa, đặc biệt vào sáng sớm và chiều tối khi sương nhẹ bao phủ mặt hồ." tilt="19.52" target="" pan="-99.81" skinid="ht_node__2_vr" url="{node6}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node7">
-    <input leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="" customnodeid="" author="" source="" nodeid="node7" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Vườn hoa hồ Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Quảng trường hồ Sapa" url="{node6}" pan="-177.19" skinid="ht_node" tilt="12.25"/>
-      <hotspot description="" target="" id="Point02" title="Vườn hoa hồ Sapa" url="{node8}" pan="-267.87" skinid="ht_node" tilt="-3.32"/>
+    <userdata heading="0" title="Vườn hoa hồ Sapa" customnodeid="" author="" nodeid="node7" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Quảng trường hồ Sapa" description="" tilt="12.25" target="" pan="-177.19" skinid="ht_node" url="{node6}"/>
+      <hotspot id="Point02" title="Vườn hoa hồ Sapa" description="" tilt="-3.32" target="" pan="-267.87" skinid="ht_node" url="{node8}"/>
+      <hotspot id="Point03" title="" description="Dọc theo triền hồ là Vườn hoa Hồ Sapa, được chăm sóc quanh năm với nhiều loài hoa đặc trưng vùng núi. Đây là điểm yêu thích của du khách khi muốn chụp hình lưu niệm hoặc tản bộ trong bầu không khí trong lành." tilt="-41.77" target="" pan="-267.5" skinid="ht_node__2_vr" url="{node7}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node8">
-    <input leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:03 PM" customnodeid="" author="" source="" nodeid="node8" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Vườn hoa hồ Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Vườn hoa hồ Sapa" url="{node7}" pan="-102.12" skinid="ht_node" tilt="-1.33"/>
+    <userdata heading="0" title="Vườn hoa hồ Sapa" customnodeid="" author="" nodeid="node8" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:03 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Vườn hoa hồ Sapa" description="" tilt="-1.33" target="" pan="-102.12" skinid="ht_node" url="{node7}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node9">
-    <input leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:04 PM" customnodeid="" author="" source="" nodeid="node9" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Cổng con đường tình yêu" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 7" url="{node22}" pan="-176.44" skinid="flycam_hotspot" tilt="43.13"/>
-      <hotspot description="" target="" id="Point02" title="Phía trong con đường tình yêu" url="{node10}" pan="-113.63" skinid="ht_node" tilt="-3.24"/>
+    <userdata heading="0" title="Cổng con đường tình yêu" customnodeid="" author="" nodeid="node9" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:04 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 7" description="" tilt="43.13" target="" pan="-176.44" skinid="flycam_hotspot" url="{node22}"/>
+      <hotspot id="Point02" title="Phía trong con đường tình yêu" description="" tilt="-3.24" target="" pan="-113.63" skinid="ht_node" url="{node10}"/>
+      <hotspot id="Point03" title="" description="Kế đó là Con đường Tình Yêu – lối đi bộ uốn quanh hồ, nổi tiếng với khung cảnh lãng mạn. Khi đi dọc con đường này, quý khách sẽ cảm nhận sự yên tĩnh, nghe rõ tiếng gió và tiếng nước, rất thích hợp cho những cặp đôi hoặc những ai muốn tận hưởng một khoảnh khắc nhẹ nhàng giữa Sapa." tilt="-44.28" target="" pan="-105.49" skinid="ht_node__2_vr" url="{node9}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node10">
-    <input leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:05 PM" customnodeid="" author="" source="" nodeid="node10" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Phía trong con đường tình yêu" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Cổng con đường tình yêu" url="{node9}" pan="-183.35" skinid="ht_node" tilt="-1.79"/>
-      <hotspot description="" target="" id="Point02" title="Phía trong con đường tình yêu" url="{node11}" pan="-356.93" skinid="ht_node" tilt="-2.08"/>
+    <userdata heading="0" title="Phía trong con đường tình yêu" customnodeid="" author="" nodeid="node10" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:05 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Cổng con đường tình yêu" description="" tilt="-1.79" target="" pan="-183.35" skinid="ht_node" url="{node9}"/>
+      <hotspot id="Point02" title="Phía trong con đường tình yêu" description="" tilt="-2.08" target="" pan="-356.93" skinid="ht_node" url="{node11}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node11">
-    <input leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="" customnodeid="" author="" source="" nodeid="node11" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Phía trong con đường tình yêu" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Phía trong con đường tình yêu" url="{node10}" pan="-182.05" skinid="ht_node" tilt="-2.19"/>
+    <userdata heading="0" title="Phía trong con đường tình yêu" customnodeid="" author="" nodeid="node11" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Phía trong con đường tình yêu" description="" tilt="-2.19" target="" pan="-182.05" skinid="ht_node" url="{node10}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node12">
-    <input leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:07 PM" customnodeid="" author="" source="" nodeid="node12" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Chợ đêm Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Trên cao 1" url="{node16}" pan="-268.82" skinid="flycam_hotspot" tilt="38.43"/>
-      <hotspot description="" target="" id="Point02" title="Trên cao 2" url="{node17}" pan="-194.46" skinid="flycam_hotspot" tilt="30.13"/>
-      <hotspot description="" target="" id="Point03" title="Trên cao 4" url="{node19}" pan="-234.01" skinid="flycam_hotspot" tilt="78.39"/>
-      <hotspot description="" target="" id="Point04" title="Trung tâm chợ đêm Sapa" url="{node13}" pan="-168.66" skinid="ht_node" tilt="-0.48"/>
-      <hotspot description="" target="" id="Point05" title="Chợ Sapa" url="{node14}" pan="-351.43" skinid="ht_node" tilt="0.34"/>
+    <userdata heading="0" title="Chợ đêm Sapa" customnodeid="" author="" nodeid="node12" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:07 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Trên cao 1" description="" tilt="38.43" target="" pan="-268.82" skinid="flycam_hotspot" url="{node16}"/>
+      <hotspot id="Point02" title="Trên cao 2" description="" tilt="30.13" target="" pan="-194.46" skinid="flycam_hotspot" url="{node17}"/>
+      <hotspot id="Point03" title="Trên cao 4" description="" tilt="78.39" target="" pan="-234.01" skinid="flycam_hotspot" url="{node19}"/>
+      <hotspot id="Point04" title="Trung tâm chợ đêm Sapa" description="" tilt="-0.48" target="" pan="-168.66" skinid="ht_node" url="{node13}"/>
+      <hotspot id="Point05" title="Chợ Sapa" description="" tilt="0.34" target="" pan="-351.43" skinid="ht_node" url="{node14}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node13">
-    <input leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:09 PM" customnodeid="" author="" source="" nodeid="node13" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Trung tâm chợ đêm Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Chợ đêm Sapa" url="{node12}" pan="-175.76" skinid="ht_node" tilt="2.91"/>
+    <userdata heading="0" title="Trung tâm chợ đêm Sapa" customnodeid="" author="" nodeid="node13" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:09 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Chợ đêm Sapa" description="" tilt="2.91" target="" pan="-175.76" skinid="ht_node" url="{node12}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <panorama id="node14">
-    <input leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" width="1024" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingpitch="0" height="1024">
-      <level preload="0" predecode="0" width="1024" height="1024"/>
-      <level preload="0" predecode="0" width="512" height="512"/>
-      <level preload="1" predecode="1" width="256" height="256"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelbias="0.400" levelingroll="0" height="1024" width="1024" leveltilesize="510" overlap="1" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" levelingpitch="0">
+      <level height="1024" predecode="0" width="1024" preload="0"/>
+      <level height="512" predecode="0" width="512" preload="0"/>
+      <level height="256" predecode="1" width="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="100" projection="4" pan="0" tilt="0"/>
-      <flyin fov="170" projection="9" pan="0" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="1" fov="140" fovstereographic="330" pan="360" tilt="90"/>
+      <start tilt="0" fov="100" pan="0" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fov="140" fovstereographic="330" fovfisheye="360" pan="360" scaletofit="1"/>
     </view>
-    <userdata info="" datetime="12/1/2025 2:09 PM" customnodeid="" author="" source="" nodeid="node14" tags="Anh360sapa-edited1" longitude="" copyright="" description="" title="Chợ Sapa" comment="" altitude="-3048.00" latitude="" heading="0"/>
-    <hotspots smoothmovement="0" width="180" height="20" wordwrap="1">
-      <label bordercolor="0x000000" borderradius="1" border="1" textcolor="0x000000" width="180" wordwrap="1" background="1" textalpha="1" enabled="1" backgroundalpha="1" height="20" backgroundcolor="0xffffff" borderalpha="1"/>
-      <polystyle borderalpha="1" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" mode="0"/>
-      <hotspot description="" target="" id="Point01" title="Chợ đêm Sapa" url="{node12}" pan="-346.39" skinid="ht_node" tilt="-2.73"/>
+    <userdata heading="0" title="Chợ Sapa" customnodeid="" author="" nodeid="node14" info="" longitude="" description="" copyright="" source="" altitude="-3048.00" datetime="12/1/2025 2:09 PM" tags="Anh360sapa-edited1" latitude="" comment=""/>
+    <hotspots smoothmovement="0" wordwrap="1" height="20" width="180">
+      <label borderalpha="1" borderradius="1" backgroundcolor="0xffffff" enabled="1" height="20" background="1" wordwrap="1" textcolor="0x000000" width="180" backgroundalpha="1" bordercolor="0x000000" textalpha="1" border="1"/>
+      <polystyle handcursor="1" borderalpha="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot id="Point01" title="Chợ đêm Sapa" description="" tilt="-2.73" target="" pan="-346.39" skinid="ht_node" url="{node12}"/>
     </hotspots>
     <media/>
-    <transition zoomout="0" zoomoutpause="1" softedge="0" zoomin="0" type="crossdissolve" zoomfov="40" zoomspeed="2" blendcolor="0x000000" zoomafterinfov="140" enabled="1" blendtime="1" zoomafteroutfov="40" delay="none"/>
-    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
-    <control zoomcentercursor="1" speedwheel="1" hideabout="0" lockedwheel="0" sensitivity="8" rubberband="0" invertcontrol="1" contextfullscreen="1" simulatemass="1" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0" contextvr="1" lockedmouse="0" invertwheel="0" lockedkeyboardzoom="0"/>
-    <vr defaulthsscale="100" toggleskinbutton="1" skinbuttonposition="0"/>
+    <transition zoomout="0" zoomin="0" zoomafterinfov="140" enabled="1" blendcolor="0x000000" zoomoutpause="1" zoomspeed="2" softedge="0" blendtime="1" zoomfov="40" delay="none" type="crossdissolve" zoomafteroutfov="40"/>
+    <animation clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" invertcontrol="1" contextprojections="0" rubberband="0" contextfullscreen="1" simulatemass="1" dblclickfullscreen="0" lockedwheel="0" hideabout="0" sensitivity="8" invertwheel="0" lockedkeyboardzoom="0" zoomcentercursor="1" lockedkeyboard="0" contextvr="1" lockedmouse="0"/>
+    <vr skinbuttonposition="0" toggleskinbutton="1" defaulthsscale="100"/>
   </panorama>
   <masternode>
-    <userdata author="" title="" comment="" tags="" copyright="" description=""/>
+    <userdata title="" description="" copyright="" author="" tags="" comment=""/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>

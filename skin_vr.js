@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.9/20995
 // Filename: fat.ggsk
-// Generated 2025-12-12T02:24:23
+// Generated 2025-12-12T02:38:41
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('resp_phone', 2, false, { ignoreInState: 1  });
