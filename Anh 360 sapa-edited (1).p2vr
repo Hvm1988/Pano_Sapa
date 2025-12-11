@@ -1341,6 +1341,35 @@
           <width>0</width>
           <height>0</height>
         </hotspot>
+        <hotspot>
+          <position>
+            <pan>-226.27</pan>
+            <tilt>-14.47</tilt>
+            <fov>10</fov>
+          </position>
+          <next>
+            <pan>0</pan>
+            <tilt>0</tilt>
+            <fov>0</fov>
+          </next>
+          <customprops/>
+          <polygon/>
+          <id>Point02</id>
+          <description>Quý khách đang đứng tại ngã tư Quảng Trường Sapa, ngay trước cổng Sapa Plaza, một trong những điểm giao thoa sôi động nhất của trung tâm thị trấn. Từ vị trí này, quý khách có thể quan sát nhịp sống đặc trưng của Sapa: bên trái là Nhà thờ Đá – biểu tượng cổ kính của vùng núi Tây Bắc; phía trước là khu quảng trường trung tâm, nơi thường xuyên diễn ra các hoạt động văn hóa, lễ hội và biểu diễn văn nghệ của người H’Mông, Dao. Còn phía sau lưng chúng ta là khu vực mua sắm và dịch vụ hiện đại của Sapa Plaza.
+
+Khi đứng tại ngã tư này, quý khách sẽ cảm nhận rõ sự hòa quyện giữa vẻ đẹp truyền thống và nét hiện đại của Sapa. Đây cũng là điểm hẹn quen thuộc trước mỗi hành trình khám phá thị trấn mờ sương. Hướng tiếp theo, chúng ta sẽ di chuyển về phía…</description>
+          <linktype>node</linktype>
+          <linksubtype>unknown</linksubtype>
+          <url>{node2}</url>
+          <skinid>ht_node__2_vr</skinid>
+          <type>point</type>
+          <distance>0</distance>
+          <distanceauto>1</distanceauto>
+          <autoplace>0</autoplace>
+          <use3d>0</use3d>
+          <width>0</width>
+          <height>0</height>
+        </hotspot>
       </hotspots>
       <output/>
       <streetview/>
@@ -1785,6 +1814,33 @@ Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân
           <width>0</width>
           <height>0</height>
         </hotspot>
+        <hotspot>
+          <position>
+            <pan>-99.81</pan>
+            <tilt>19.52</tilt>
+            <fov>10</fov>
+          </position>
+          <next>
+            <pan>0</pan>
+            <tilt>0</tilt>
+            <fov>0</fov>
+          </next>
+          <customprops/>
+          <polygon/>
+          <id>Point03</id>
+          <description>Quý khách đang có mặt tại khu vực Hồ Sapa, một trong những không gian thư giãn và ngắm cảnh đẹp nhất của thị trấn. Phía trước chúng ta là Quảng trường Hồ Sapa, nơi du khách thường dừng chân để nhìn ra mặt nước phẳng lặng, phản chiếu dãy núi Hoàng Liên hùng vĩ phía xa. Không gian ở đây luôn mang một vẻ yên bình rất đặc trưng của Sapa, đặc biệt vào sáng sớm và chiều tối khi sương nhẹ bao phủ mặt hồ.</description>
+          <linktype>node</linktype>
+          <linksubtype>unknown</linksubtype>
+          <url>{node6}</url>
+          <skinid>ht_node__2_vr</skinid>
+          <type>point</type>
+          <distance>0</distance>
+          <distanceauto>1</distanceauto>
+          <autoplace>0</autoplace>
+          <use3d>0</use3d>
+          <width>0</width>
+          <height>0</height>
+        </hotspot>
       </hotspots>
       <output/>
       <streetview/>
@@ -1873,6 +1929,33 @@ Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân
           <linktype>node</linktype>
           <linksubtype>unknown</linksubtype>
           <url>{node8}</url>
+          <type>point</type>
+          <distance>0</distance>
+          <distanceauto>1</distanceauto>
+          <autoplace>0</autoplace>
+          <use3d>0</use3d>
+          <width>0</width>
+          <height>0</height>
+        </hotspot>
+        <hotspot>
+          <position>
+            <pan>-267.5</pan>
+            <tilt>-41.77</tilt>
+            <fov>10</fov>
+          </position>
+          <next>
+            <pan>0</pan>
+            <tilt>0</tilt>
+            <fov>0</fov>
+          </next>
+          <customprops/>
+          <polygon/>
+          <id>Point03</id>
+          <description>Dọc theo triền hồ là Vườn hoa Hồ Sapa, được chăm sóc quanh năm với nhiều loài hoa đặc trưng vùng núi. Đây là điểm yêu thích của du khách khi muốn chụp hình lưu niệm hoặc tản bộ trong bầu không khí trong lành.</description>
+          <linktype>node</linktype>
+          <linksubtype>unknown</linksubtype>
+          <url>{node7}</url>
+          <skinid>ht_node__2_vr</skinid>
           <type>point</type>
           <distance>0</distance>
           <distanceauto>1</distanceauto>
@@ -2042,6 +2125,33 @@ Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân
           <linktype>node</linktype>
           <linksubtype>unknown</linksubtype>
           <url>{node10}</url>
+          <type>point</type>
+          <distance>0</distance>
+          <distanceauto>1</distanceauto>
+          <autoplace>0</autoplace>
+          <use3d>0</use3d>
+          <width>0</width>
+          <height>0</height>
+        </hotspot>
+        <hotspot>
+          <position>
+            <pan>-105.49</pan>
+            <tilt>-44.28</tilt>
+            <fov>10</fov>
+          </position>
+          <next>
+            <pan>0</pan>
+            <tilt>0</tilt>
+            <fov>0</fov>
+          </next>
+          <customprops/>
+          <polygon/>
+          <id>Point03</id>
+          <description>Kế đó là Con đường Tình Yêu – lối đi bộ uốn quanh hồ, nổi tiếng với khung cảnh lãng mạn. Khi đi dọc con đường này, quý khách sẽ cảm nhận sự yên tĩnh, nghe rõ tiếng gió và tiếng nước, rất thích hợp cho những cặp đôi hoặc những ai muốn tận hưởng một khoảnh khắc nhẹ nhàng giữa Sapa.</description>
+          <linktype>node</linktype>
+          <linksubtype>unknown</linksubtype>
+          <url>{node9}</url>
+          <skinid>ht_node__2_vr</skinid>
           <type>point</type>
           <distance>0</distance>
           <distanceauto>1</distanceauto>
