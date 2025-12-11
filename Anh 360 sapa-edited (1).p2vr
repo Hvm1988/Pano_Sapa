@@ -2640,7 +2640,7 @@ Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân
         <tilesize>1024</tilesize>
         <filename>pano.xml</filename>
         <skinfile>$d/fat.ggsk</skinfile>
-        <vrskinfile>$d/fat.ggsk</vrskinfile>
+        <vrskinfile></vrskinfile>
         <vrskinconfiguration/>
         <vrskintablesconfiguration/>
         <vrskincolorsconfiguration>
