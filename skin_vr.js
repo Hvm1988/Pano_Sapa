@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.9/20995
 // Filename: fat.ggsk
-// Generated 2025-12-12T01:46:14
+// Generated 2025-12-12T02:16:25
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('resp_phone', 2, false, { ignoreInState: 1  });
@@ -13744,587 +13744,6 @@ function pano2vrVrSkin(player,base) {
 		me._windows_backgr.add(me._button_2);
 		me._intro.add(me._windows_backgr);
 		me.skinGroup.add(me._intro);
-		el = new THREE.Group();
-		el.userData.setOpacityInternal = function(v) {};
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 720;
-		el.userData.height = 540;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'info_popup';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.230);
-		el.renderOrder = 23;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.setOpacityInternal = function(v) {
-			if (me._info_popup.material) me._info_popup.material.opacity = v;
-			me._info_popup.visible = (v>0 && me._info_popup.userData.visible);
-		}
-		el.userData.isVisible = function() {
-			let vis = me._info_popup.visible
-			let parentEl = me._info_popup.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._info_popup.userData.opacity = v;
-			v = v * me._info_popup.userData.parentOpacity;
-			me._info_popup.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._info_popup.children.length; i++) {
-				let child = me._info_popup.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._info_popup.userData.parentOpacity = v;
-			v = v * me._info_popup.userData.opacity
-			me._info_popup.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._info_popup.children.length; i++) {
-				let child = me._info_popup.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = false;
-		el.userData.visible = false;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._info_popup = el;
-		el.userData.ggId="info_popup";
-		me._info_popup.userData.ggUpdatePosition=function (useTransition) {
-		}
-		width = 7.2;
-		height = 5.4;
-		roundedRectShape = new THREE.Shape();
-		roundedRectShape.moveTo((-width / 2.0) + 0.11, (height / 2.0));
-		roundedRectShape.lineTo((width / 2.0) - 0.11, (height / 2.0));
-		roundedRectShape.arc(0, -0.11, 0.11, Math.PI / 2.0, 2.0 * Math.PI, true);
-		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.11);
-		roundedRectShape.arc(-0.11, 0, 0.11, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		roundedRectShape.lineTo((-width / 2.0) + 0.11, (-height / 2.0));
-		roundedRectShape.arc(0, 0.11, 0.11, 3.0 * Math.PI / 2.0, Math.PI, true);
-		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.11);
-		roundedRectShape.arc(0.11, 0, 0.11, Math.PI, Math.PI / 2.0, true);
-		geometry = new THREE.ShapeGeometry(roundedRectShape);
-		geometry.name = 'Rectangle 1_geometry';
-		geometry.computeBoundingBox();
-		var min = geometry.boundingBox.min;
-		var max = geometry.boundingBox.max;
-		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
-		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
-		var vertexPositions = geometry.getAttribute('position');
-		var vertexUVs = geometry.getAttribute('uv');
-		for (var i = 0; i < vertexPositions.count; i++) {
-			var v1 = vertexPositions.getX(i);
-			var	v2 = vertexPositions.getY(i);
-			vertexUVs.setX(i, (v1 + offset.x) / range.x);
-			vertexUVs.setY(i, (v2 + offset.y) / range.y);
-		}
-		geometry.uvsNeedUpdate = true;
-		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0, 0, 0).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'Rectangle 1_material';
-		el = new THREE.Mesh( geometry, material );
-		width = 7.2;
-		height = 5.4;
-		borderShape = new THREE.Shape();
-		borderShape.moveTo((-width / 2.0) - 0.01 + 0.12, (height / 2.0) + 0.01);
-		borderShape.lineTo((width / 2.0) + 0.01 - 0.12, (height / 2.0) + 0.01);
-		borderShape.arc(0, -0.12, 0.12, Math.PI / 2.0, 2.0 * Math.PI, true);
-		borderShape.lineTo((width / 2.0) + 0.01, (-height / 2.0) - 0.01 + 0.12);
-		borderShape.arc(-0.12, 0, 0.12, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		borderShape.lineTo((-width / 2.0) - 0.01 + 0.12, (-height / 2.0) - 0.01);
-		borderShape.arc(0, 0.12, 0.12, 3.0 * Math.PI / 2.0, Math.PI, true);
-		borderShape.lineTo((-width / 2.0) - 0.01, (height / 2.0) + 0.01 - 0.12);
-		borderShape.arc(0.12, 0, 0.12, Math.PI, Math.PI / 2.0, true);
-		innerShape = new THREE.Path();
-		innerShape.moveTo((-width / 2.0) + 0.11, (height / 2.0));
-		innerShape.lineTo((width / 2.0) - 0.11, (height / 2.0));
-		innerShape.arc(0, -0.11, 0.11, Math.PI / 2.0, 2.0 * Math.PI, true);
-		innerShape.lineTo((width / 2.0), (-height / 2.0) + 0.11);
-		innerShape.arc(-0.11, 0, 0.11, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		innerShape.lineTo((-width / 2.0) + 0.11, (-height / 2.0));
-		innerShape.arc(0, 0.11, 0.11, 3.0 * Math.PI / 2.0, Math.PI, true);
-		innerShape.lineTo((-width / 2.0), (height / 2.0) - 0.11);
-		innerShape.arc(0.11, 0, 0.11, Math.PI, Math.PI / 2.0, true);
-		borderShape.holes.push(innerShape);
-		borderGeometry = new THREE.ShapeGeometry(borderShape);
-		borderGeometry.name = 'Rectangle 1_borderGeometry';
-		borderMaterial = new THREE.MeshBasicMaterial( {color: new THREE.Color(0, 0, 0).convertSRGBToLinear(), side: THREE.DoubleSide, transparent: true } );
-		borderMaterial.name = 'Rectangle 1_borderMaterial';
-		el.userData.border = new THREE.Mesh( borderGeometry, borderMaterial );
-		el.userData.border.name = 'Rectangle 1_borderMesh';
-		el.add(el.userData.border);
-		el.userData.backgroundColorAlpha = 0.588235;
-		el.userData.borderColorAlpha = 0;
-		el.userData.setOpacityInternal = function(v) {
-			me._rectangle_1.material.opacity = v * me._rectangle_1.userData.backgroundColorAlpha;
-			me._rectangle_1.userData.border.material.opacity = v * me._rectangle_1.userData.borderColorAlpha;
-			if (me._rectangle_1.userData.ggSubElement) {
-				me._rectangle_1.userData.ggSubElement.material.opacity = v
-				me._rectangle_1.userData.ggSubElement.visible = (v>0 && me._rectangle_1.userData.visible);
-			}
-			me._rectangle_1.visible = (v>0 && me._rectangle_1.userData.visible);
-		}
-		el.userData.setBackgroundColor = function(v) {
-			me._rectangle_1.material.color = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._rectangle_1.userData.backgroundColorAlpha = v;
-			me._rectangle_1.userData.setOpacity(me._rectangle_1.userData.opacity);
-		}
-		el.userData.setBorderColor = function(v) {
-			me._rectangle_1.userData.border.material.color = v;
-		}
-		el.userData.setBorderColorAlpha = function(v) {
-			me._rectangle_1.userData.borderColorAlpha = v;
-			me._rectangle_1.userData.setOpacity(me._rectangle_1.userData.opacity);
-		}
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 720;
-		el.userData.height = 540;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'Rectangle 1';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.240);
-		el.renderOrder = 24;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._rectangle_1.visible
-			let parentEl = me._rectangle_1.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._rectangle_1.userData.opacity = v;
-			v = v * me._rectangle_1.userData.parentOpacity;
-			me._rectangle_1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._rectangle_1.children.length; i++) {
-				let child = me._rectangle_1.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._rectangle_1.userData.parentOpacity = v;
-			v = v * me._rectangle_1.userData.opacity
-			me._rectangle_1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._rectangle_1.children.length; i++) {
-				let child = me._rectangle_1.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._rectangle_1 = el;
-		el.userData.ggId="Rectangle 1";
-		me._rectangle_1.userData.ggUpdatePosition=function (useTransition) {
-		}
-		geometry = new THREE.PlaneGeometry(6.475, 4.85, 5, 5 );
-		geometry.name = 'Text 2_geometry';
-		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'Text 2_material';
-		el = new THREE.Mesh( geometry, material );
-		el.userData.backgroundColorAlpha = 0;
-		el.userData.borderColorAlpha = 0;
-		el.userData.setOpacityInternal = function(v) {
-			me._text_2.material.opacity = v;
-			if (me._text_2.userData.hasScrollbar) {
-				me._text_2.userData.scrollbar.material.opacity = v;
-				me._text_2.userData.scrollbarBg.material.opacity = v;
-			}
-			if (me._text_2.userData.ggSubElement) {
-				me._text_2.userData.ggSubElement.material.opacity = v
-				me._text_2.userData.ggSubElement.visible = (v>0 && me._text_2.userData.visible);
-			}
-			me._text_2.visible = (v>0 && me._text_2.userData.visible);
-		}
-		el.userData.setBackgroundColor = function(v) {
-			me._text_2.material.color = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._text_2.userData.backgroundColorAlpha = v;
-			me._text_2.userData.setOpacity(me._text_2.userData.opacity);
-		}
-		el.translateX(-0.01);
-		el.translateY(0.01);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 647.5;
-		el.userData.height = 485;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'Text 2';
-		el.userData.x = -0.01;
-		el.userData.y = 0.01;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.250);
-		el.renderOrder = 25;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._text_2.visible
-			let parentEl = me._text_2.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._text_2.userData.opacity = v;
-			v = v * me._text_2.userData.parentOpacity;
-			me._text_2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._text_2.children.length; i++) {
-				let child = me._text_2.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._text_2.userData.parentOpacity = v;
-			v = v * me._text_2.userData.opacity
-			me._text_2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._text_2.children.length; i++) {
-				let child = me._text_2.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._text_2 = el;
-		el.userData.textLines = [];
-		el.userData.backgroundColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
-		el.userData.textColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
-		el.userData.textColorAlpha = 1;
-		var canvas = document.createElement('canvas');
-		canvas.width = 1295;
-		canvas.height = 970;
-		el.userData.textCanvas = canvas;
-		el.userData.textCanvasContext = canvas.getContext('2d');
-		el.userData.ggStripTags = function(text) {
-			let doc = new DOMParser().parseFromString(text, 'text/html');
-			return doc.body.textContent || '';
-		}
-		el.userData.ggWrapText = function(scrollbar) {
-			me._text_2.userData.totalHeightCanv = 2 * (3);
-			me._text_2.userData.textLines = [];
-			var ctx = me._text_2.userData.textCanvasContext;
-			var words = [];
-			let tmpText = String(me._text_2.userData.ggText);
-			let whiteSpaceIndex = -1;
-			do {
-				whiteSpaceIndex = tmpText.search(/[\s]/);
-				if (whiteSpaceIndex != -1) {
-					words.push(tmpText.substr(0, whiteSpaceIndex));
-					tmpText = tmpText.substr(whiteSpaceIndex);
-					if (tmpText.charAt(0) == '\n') {
-						words.push('\n');
-					}
-					tmpText = tmpText.substr(1);
-				} else {
-					words.push(tmpText);
-				}
-			} while (whiteSpaceIndex != -1);
-			var line = '';
-			for (var i = 0; i < words.length; i++) {
-				if (words[i] == '\n') {
-					me._text_2.userData.textLines.push(line);
-					line = '';
-					me._text_2.userData.totalHeightCanv += me._text_2.userData.lineHeightCanv;
-					continue;
-				}
-				var testLine;
-				if (line == '') {
-					testLine = words[i]
-				} else {
-					testLine = line + ' ' + words[i];
-				}
-				var metrics = ctx.measureText(testLine);
-				var testWidth = metrics.width;
-				if (testWidth > (2 * (me._text_2.userData.width - 0 - (scrollbar ? 25 : 0))) && i > 0) {
-					me._text_2.userData.textLines.push(line);
-					line = words[i];
-					me._text_2.userData.totalHeightCanv += me._text_2.userData.lineHeightCanv;
-				} else {
-					line = testLine;
-				}
-			}
-			me._text_2.userData.textLines.push(line);
-			me._text_2.userData.totalHeightCanv += me._text_2.userData.lineHeightCanv;
-		}
-		el.userData.ggPaintCanvasText = function() {
-			var canv = me._text_2.userData.textCanvas;
-			var ctx = me._text_2.userData.textCanvasContext;
-			ctx.clearRect(0, 0, canv.width, canv.height);
-			ctx.fillStyle = 'rgba(' + me._text_2.userData.backgroundColor.r * 255 + ', ' + me._text_2.userData.backgroundColor.g * 255 + ', ' + me._text_2.userData.backgroundColor.b * 255 + ', ' + me._text_2.userData.backgroundColorAlpha + ')';
-			ctx.fillRect(0, 0, canv.width, canv.height);
-			ctx.fillStyle = 'rgba(' + me._text_2.userData.textColor.r * 255 + ', ' + me._text_2.userData.textColor.g * 255 + ', ' + me._text_2.userData.textColor.b * 255 + ', ' + me._text_2.userData.textColorAlpha + ')';
-			ctx.textBaseline = 'top';
-			var x = 2 * 0;
-			ctx.textAlign = 'left';
-			var y = 2 * 3;
-			y -= me._text_2.userData.scrollPosPercent * me._text_2.userData.totalHeightCanv;
-			for (var i = 0; i < me._text_2.userData.textLines.length; i++) {
-				ctx.fillText(me._text_2.userData.textLines[i], x, y);
-				y += me._text_2.userData.lineHeightCanv;
-			}
-			var textTexture = new THREE.CanvasTexture(canv);
-			textTexture.name = 'Text 2_texture';
-			textTexture.minFilter = THREE.LinearFilter;
-			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
-			textTexture.wrapS = THREE.ClampToEdgeWrapping;
-			textTexture.wrapT = THREE.ClampToEdgeWrapping;
-			if (me._text_2.material.map) {
-				me._text_2.material.map.dispose();
-			}
-			me._text_2.material.map = textTexture;
-		}
-		el.userData.ggRenderText = function() {
-			for (let i = 0; i < me._text_2.children.length; i++) {
-				let child = me._text_2.children[i];
-				if (child.name.includes('scrollbar')) me._text_2.remove(child);
-			}
-			var canv = me._text_2.userData.textCanvas;
-			var ctx = me._text_2.userData.textCanvasContext;
-			ctx.font = '40px Verdana';
-			me._text_2.userData.lineHeightCanv = 40 * 1.2;
-			me._text_2.userData.ggWrapText(false);
-			me._text_2.userData.boxWidthCanv = 2 * me._text_2.userData.width;
-			me._text_2.userData.boxHeightCanv = 2 * me._text_2.userData.height;
-			me._text_2.userData.scrollPosPercent = 0.0
-			if (me._text_2.userData.totalHeightCanv > (2 * (me._text_2.userData.height))) {
-				me._text_2.userData.ggWrapText(true);
-				me._text_2.userData.pagePercent = (2 * (me._text_2.userData.height) - me._text_2.userData.lineHeightCanv) / me._text_2.userData.totalHeightCanv;
-				me._text_2.userData.maxScrollPercent = (me._text_2.userData.totalHeightCanv - (2 * (me._text_2.userData.height))) / me._text_2.userData.totalHeightCanv;
-				geometry = new THREE.PlaneGeometry(25 / 100.0, me._text_2.userData.height / 100.0, 5, 5 );
-				geometry.name = 'Text 2_scrollbarBgGeometry';
-				material = new THREE.MeshBasicMaterial( {color: 0x7f7f7f, side: THREE.DoubleSide, transparent: true } );
-				material.name = 'Text 2_scrollbarBgMaterial';
-				me._text_2.userData.scrollbarBg = new THREE.Mesh( geometry, material );
-				me._text_2.userData.scrollbarBg.name = 'Text 2_scrollbarBg';
-				me._text_2.add(me._text_2.userData.scrollbarBg);
-				me._text_2.userData.scrollbarXPos = (me._text_2.userData.width - 25) / 200.0;
-				me._text_2.userData.scrollbarBg.position.x = me._text_2.userData.scrollbarXPos;
-				me._text_2.userData.scrollbarBg.position.z = me._text_2.position.z + 0.01;
-				me._text_2.userData.scrollbarBg.userData.stopPropagation = true;
-				me._text_2.userData.scrollbarHeight = ((2 * me._text_2.userData.height) / me._text_2.userData.totalHeightCanv) * me._text_2.userData.height;
-				geometry = new THREE.PlaneGeometry(25 / 100.0, me._text_2.userData.scrollbarHeight / 100.0, 5, 5 );
-				geometry.name = 'Text 2_scrollbarGeometry';
-				material = new THREE.MeshBasicMaterial( {color: 0xbfbfbf, side: THREE.DoubleSide, transparent: true } );
-				material.name = 'Text 2_scrollbarMaterial';
-				me._text_2.userData.scrollbar = new THREE.Mesh( geometry, material );
-				me._text_2.userData.scrollbar.name = 'Text 2_scrollbar';
-				me._text_2.add(me._text_2.userData.scrollbar);
-				me._text_2.userData.scrollbar.position.x = me._text_2.userData.scrollbarXPos;
-				me._text_2.userData.scrollbar.position.z = me._text_2.position.z + 0.02;
-				me._text_2.userData.scrollbarYPosMin = (me._text_2.userData.height - me._text_2.userData.scrollbarHeight) / 200.0;
-				me._text_2.userData.scrollbarYPosMax = me._text_2.userData.scrollbarYPosMin - (me._text_2.userData.height - me._text_2.userData.scrollbarHeight) / 100.0;
-				me._text_2.userData.scrollbar.position.y = me._text_2.userData.scrollbarYPosMin;
-				geometry = new THREE.PlaneGeometry(25 / 100.0, me._text_2.userData.height / 200.0, 5, 5 );
-				geometry.name = 'Text 2_scrollbarPageDownGeometry';
-				material = new THREE.MeshBasicMaterial( {color: 0x000000, side: THREE.DoubleSide, transparent: true } );
-				material.name = 'Text 2_scrollbarPageDownMaterial';
-				me._text_2.userData.scrollbarPageDown = new THREE.Mesh( geometry, material );
-				me._text_2.userData.scrollbarPageDown.name = 'Text 2_scrollbarPageDown';
-				me._text_2.userData.scrollbarPageDown.userData.onclick = function() {
-					me._text_2.userData.scrollPosPercent -= me._text_2.userData.pagePercent;
-					me._text_2.userData.scrollPosPercent = Math.max(me._text_2.userData.scrollPosPercent, 0);
-					me._text_2.userData.ggPaintCanvasText();
-					me._text_2.userData.scrollbar.position.y += (me._text_2.userData.height * me._text_2.userData.pagePercent) / 100.0;
-					me._text_2.userData.scrollbar.position.y = Math.min(me._text_2.userData.scrollbar.position.y, me._text_2.userData.scrollbarYPosMin);
-				}
-				me._text_2.userData.scrollbarPageDown.position.x = me._text_2.userData.scrollbarXPos;
-				me._text_2.userData.scrollbarPageDown.position.y = me._text_2.userData.height / 400.0;
-				me._text_2.userData.scrollbarPageDown.position.z = me._text_2.position.z + 0.05;
-				me._text_2.userData.scrollbarPageDown.userData.stopPropagation = true;
-				me._text_2.userData.scrollbarPageDown.userData.clickInvisible = true;
-				me._text_2.userData.scrollbarPageDown.visible = false;
-				me._text_2.add(me._text_2.userData.scrollbarPageDown);
-				geometry = new THREE.PlaneGeometry(25 / 100.0, me._text_2.userData.height / 200.0, 5, 5 );
-				geometry.name = 'Text 2_scrollbarPageUpGeometry';
-				material = new THREE.MeshBasicMaterial( {color: 0x000000, side: THREE.DoubleSide, transparent: true } );
-				material.name = 'Text 2_scrollbarPageUpMaterial';
-				me._text_2.userData.scrollbarPageUp = new THREE.Mesh( geometry, material );
-				me._text_2.userData.scrollbarPageUp.name = 'Text 2_scrollbarPageUp';
-				me._text_2.userData.scrollbarPageUp.userData.onclick = function() {
-					me._text_2.userData.scrollPosPercent += me._text_2.userData.pagePercent;
-					me._text_2.userData.scrollPosPercent = Math.min(me._text_2.userData.scrollPosPercent, me._text_2.userData.maxScrollPercent);
-					me._text_2.userData.ggPaintCanvasText();
-					me._text_2.userData.scrollbar.position.y -= (me._text_2.userData.height * me._text_2.userData.pagePercent) / 100.0;
-					me._text_2.userData.scrollbar.position.y = Math.max(me._text_2.userData.scrollbar.position.y, me._text_2.userData.scrollbarYPosMax);
-				}
-				me._text_2.userData.scrollbarPageUp.position.x = me._text_2.userData.scrollbarXPos;
-				me._text_2.userData.scrollbarPageUp.position.y = -me._text_2.userData.height / 400.0;
-				me._text_2.userData.scrollbarPageUp.position.z = me._text_2.position.z + 0.05;
-				me._text_2.userData.scrollbarPageUp.userData.stopPropagation = true;
-				me._text_2.userData.scrollbarPageUp.userData.clickInvisible = true;
-				me._text_2.userData.scrollbarPageUp.visible = false;
-				me._text_2.add(me._text_2.userData.scrollbarPageUp);
-				me._text_2.userData.hasScrollbar = true;
-			} else {
-				me._text_2.userData.hasScrollbar = false;
-			}
-			canv.width = me._text_2.userData.boxWidthCanv;
-			canv.height = me._text_2.userData.boxHeightCanv;
-			ctx.font = '40px Verdana';
-			me._text_2.userData.ggPaintCanvasText();
-		}
-		me._text_2.userData.ggUpdateText=function(force) {
-			var params = [];
-			params.push(player._(String(player.hotspot.description)));
-			var hs = player._("%1", params);
-			if (hs!=this.ggText || force) {
-				this.ggText=me._text_2.userData.ggStripTags(hs);
-				this.ggRenderText();
-			}
-		}
-		me._text_2.userData.ggUpdateText();
-		player.addListener('activehotspotchanged', function() {
-			me._text_2.userData.ggUpdateText();
-		});
-		el.userData.setBackgroundColor = function(v) {
-			me._text_2.userData.backgroundColor = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._text_2.userData.backgroundColorAlpha = v;
-		}
-		el.userData.setTextColor = function(v) {
-			me._text_2.userData.textColor = v;
-		}
-		el.userData.setTextColorAlpha = function(v) {
-			me._text_2.userData.textColorAlpha = v;
-		}
-		el.userData.ggId="Text 2";
-		me._text_2.userData.ggUpdatePosition=function (useTransition) {
-		}
-		me._rectangle_1.add(me._text_2);
-		geometry = new THREE.PlaneGeometry(0.39, 0.39, 5, 5 );
-		geometry.name = 'Button 3_geometry';
-		loader = new THREE.TextureLoader();
-		texture = loader.load(basePath + 'images_vr/button_3.png');
-		texture.colorSpace = player.getVRTextureColorSpace();
-		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true, } );
-		material.name = 'Button 3_material';
-		el = new THREE.Mesh( geometry, material );
-		el.translateX(3.405);
-		el.translateY(2.505);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 39;
-		el.userData.height = 39;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'Button 3';
-		el.userData.x = 3.405;
-		el.userData.y = 2.505;
-		el.userData.hanchor = 2;
-		el.userData.vanchor = 0;
-		el.translateZ(0.260);
-		el.renderOrder = 26;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.setOpacityInternal = function(v) {
-			if (me._button_3.material) me._button_3.material.opacity = v;
-			me._button_3.visible = (v>0 && me._button_3.userData.visible);
-		}
-		el.userData.isVisible = function() {
-			let vis = me._button_3.visible
-			let parentEl = me._button_3.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._button_3.userData.opacity = v;
-			v = v * me._button_3.userData.parentOpacity;
-			me._button_3.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._button_3.children.length; i++) {
-				let child = me._button_3.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._button_3.userData.parentOpacity = v;
-			v = v * me._button_3.userData.opacity
-			me._button_3.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._button_3.children.length; i++) {
-				let child = me._button_3.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._button_3 = el;
-		me._button_3.userData.materialNormal = me._button_3.material;
-		el.userData.ggId="Button 3";
-		me._button_3.userData.onclick=function (e) {
-			me._info_popup.visible=false;
-			me._info_popup.userData.visible=false;
-		}
-		me._button_3.userData.ggUpdatePosition=function (useTransition) {
-		}
-		me._rectangle_1.add(me._button_3);
-		me._info_popup.add(me._rectangle_1);
-		me.skinGroup.add(me._info_popup);
 		me._variable_resp_phone = {};
 		me._variable_resp_phone.ggCurrentLogicState = -1;
 		me._variable_resp_phone.logicBlock = function() {
@@ -14775,10 +14194,6 @@ document.addEventListener('keydown', (e) => {
 		me._button_1.userData.setOpacity(1.00);
 		me._button_2.userData.setOpacity(1.00);
 		me.elementMouseOver['button_2']=false;
-		me._info_popup.userData.setOpacity(1.00);
-		me._rectangle_1.userData.setOpacity(1.00);
-		me._text_2.userData.setOpacity(1.00);
-		me._button_3.userData.setOpacity(1.00);
 		me.eventactivehotspotchangedCallback = function() {
 			if (hotspotTemplates.hasOwnProperty('ht_video_youtube')) {
 				for(var i = 0; i < hotspotTemplates['ht_video_youtube'].length; i++) {
@@ -14838,6 +14253,11 @@ document.addEventListener('keydown', (e) => {
 			if (hotspotTemplates.hasOwnProperty('flycam_hotspot')) {
 				for(var i = 0; i < hotspotTemplates['flycam_hotspot'].length; i++) {
 					hotspotTemplates['flycam_hotspot'][i].ggEvent_activehotspotchanged();
+				}
+			}
+			if (hotspotTemplates.hasOwnProperty('ht_node__2_vr')) {
+				for(var i = 0; i < hotspotTemplates['ht_node__2_vr'].length; i++) {
+					hotspotTemplates['ht_node__2_vr'][i].ggEvent_activehotspotchanged();
 				}
 			}
 		};
@@ -14917,14 +14337,14 @@ document.addEventListener('keydown', (e) => {
 					hotspotTemplates['flycam_hotspot'][i].ggEvent_changenode();
 				}
 			}
-			if (hotspotTemplates.hasOwnProperty('ht_node_vr')) {
-				for(var i = 0; i < hotspotTemplates['ht_node_vr'].length; i++) {
-					hotspotTemplates['ht_node_vr'][i].ggEvent_changenode();
-				}
-			}
 			if (hotspotTemplates.hasOwnProperty('ht_node_vr_1')) {
 				for(var i = 0; i < hotspotTemplates['ht_node_vr_1'].length; i++) {
 					hotspotTemplates['ht_node_vr_1'][i].ggEvent_changenode();
+				}
+			}
+			if (hotspotTemplates.hasOwnProperty('ht_node__2_vr')) {
+				for(var i = 0; i < hotspotTemplates['ht_node__2_vr'].length; i++) {
+					hotspotTemplates['ht_node__2_vr'][i].ggEvent_changenode();
 				}
 			}
 			me.skin_nodechangeCallback();
@@ -15067,6 +14487,11 @@ document.addEventListener('keydown', (e) => {
 			if (hotspotTemplates.hasOwnProperty('flycam_hotspot')) {
 				for(var i = 0; i < hotspotTemplates['flycam_hotspot'].length; i++) {
 					hotspotTemplates['flycam_hotspot'][i].ggEvent_configloaded();
+				}
+			}
+			if (hotspotTemplates.hasOwnProperty('ht_node__2_vr')) {
+				for(var i = 0; i < hotspotTemplates['ht_node__2_vr'].length; i++) {
+					hotspotTemplates['ht_node__2_vr'][i].ggEvent_configloaded();
 				}
 			}
 			me._screentint.logicBlock_visible();
@@ -15353,6 +14778,11 @@ document.addEventListener('keydown', (e) => {
 			if (hotspotTemplates.hasOwnProperty('flycam_hotspot')) {
 				for(var i = 0; i < hotspotTemplates['flycam_hotspot'].length; i++) {
 					hotspotTemplates['flycam_hotspot'][i].ggEvent_varchanged_vis_skin();
+				}
+			}
+			if (hotspotTemplates.hasOwnProperty('ht_node__2_vr')) {
+				for(var i = 0; i < hotspotTemplates['ht_node__2_vr'].length; i++) {
+					hotspotTemplates['ht_node__2_vr'][i].ggEvent_varchanged_vis_skin();
 				}
 			}
 		};
@@ -18736,6 +18166,1021 @@ document.addEventListener('keydown', (e) => {
 		me._category_fwd_hover.userData.setOpacity(1.00);
 		me._category_title.userData.setOpacity(1.00);
 	};
+	function SkinHotspotClass_ht_node_2_vr(parentScope,hotspot) {
+		var me=this;
+		var flag=false;
+		var hs='';
+		me.parentScope=parentScope;
+		me.hotspot=hotspot;
+		var nodeId=String(hotspot.url);
+		nodeId=(nodeId.charAt(0)=='{')?nodeId.substr(1, nodeId.length - 2):''; // }
+		me.ggUserdata=skin.player.getNodeUserdata(nodeId);
+		me.ggUserdata.nodeId=nodeId;
+		me.elementMouseDown={};
+		me.elementMouseOver={};
+		me.findElements=function(id,regex) {
+			return skin.findElements(id,regex);
+		}
+		el = new THREE.Group();
+		el.userData.setOpacityInternal = function(v) {};
+		el.name = 'ht_node__2_vr';
+		el.userData.x = -3.2;
+		el.userData.y = 1.6;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.030);
+		el.renderOrder = 3;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_2_vr.visible
+			let parentEl = me._ht_node_2_vr.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_2_vr.userData.opacity = v;
+			v = v * me._ht_node_2_vr.userData.parentOpacity;
+			me._ht_node_2_vr.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_2_vr.children.length; i++) {
+				let child = me._ht_node_2_vr.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_2_vr.userData.parentOpacity = v;
+			v = v * me._ht_node_2_vr.userData.opacity
+			me._ht_node_2_vr.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_2_vr.children.length; i++) {
+				let child = me._ht_node_2_vr.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_2_vr = el;
+		el.userData.ggId="ht_node__2_vr";
+		el.userData.ggElementNodeId=function() {
+			if (me.hotspot.url!='' && me.hotspot.url.charAt(0)=='{') { // }
+				return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
+			} else {
+				if ((this.parentNode) && (this.parentNode.userData.ggElementNodeId)) {
+					return this.parentNode.userData.ggElementNodeId();
+				} else {
+					return player.getCurrentNode();
+				}
+			}
+		}
+		me._ht_node_2_vr.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getVariableValue('vis_skin') == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_node_2_vr.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_2_vr.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_2_vr.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_2_vr.visible=((!me._ht_node_2_vr.material && Number(me._ht_node_2_vr.userData.opacity>0)) || Number(me._ht_node_2_vr.material.opacity)>0)?true:false;
+			me._ht_node_2_vr.userData.visible=true;
+				}
+				else {
+			me._ht_node_2_vr.visible=false;
+			me._ht_node_2_vr.userData.visible=false;
+				}
+			}
+		}
+		me._ht_node_2_vr.logicBlock_visible();
+		me._ht_node_2_vr.userData.onclick=function (e) {
+			var list=me.findElements("ht_node_vr_1",true);
+			if (list.length>0) {
+				var e=list[0];
+				e.userData.visible = !e.userData.visible;
+				var flag=e.userData.visible;
+			}
+			while(list.length>0) {
+				var e=list.pop();
+				e.visible=((flag)&&((!e.material && Number(e.userData.opacity>0)) || Number(e.material.opacity)>0))?true:false;
+			}
+			player.triggerEvent('hsproxyclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_node_2_vr.userData.ondblclick=function (e) {
+			player.triggerEvent('hsproxydblclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_node_2_vr.userData.onmouseenter=function (e) {
+			player.setActiveHotspot(me.hotspot);
+			me.elementMouseOver['ht_node_2_vr']=true;
+			me._ht_node_preview_bg.logicBlock_visible();
+			player.triggerEvent('hsproxyover', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_node_2_vr.userData.onmouseleave=function (e) {
+			player.setActiveHotspot(null);
+			me.elementMouseOver['ht_node_2_vr']=false;
+			me._ht_node_preview_bg.logicBlock_visible();
+			player.triggerEvent('hsproxyout', {'id': me.hotspot.id, 'url': me.hotspot.url});
+		}
+		me._ht_node_2_vr.userData.ggUpdatePosition=function (useTransition) {
+		}
+		width = 1.8;
+		height = 1.2;
+		roundedRectShape = new THREE.Shape();
+		roundedRectShape.moveTo((-width / 2.0) + 0.08, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - 0.08, (height / 2.0));
+		roundedRectShape.arc(0, -0.08, 0.08, Math.PI / 2.0, 2.0 * Math.PI, true);
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.08);
+		roundedRectShape.arc(-0.08, 0, 0.08, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		roundedRectShape.lineTo((-width / 2.0) + 0.08, (-height / 2.0));
+		roundedRectShape.arc(0, 0.08, 0.08, 3.0 * Math.PI / 2.0, Math.PI, true);
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.08);
+		roundedRectShape.arc(0.08, 0, 0.08, Math.PI, Math.PI / 2.0, true);
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = 'ht_node_preview_bg_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.823529, 0.823529, 0.823529).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'ht_node_preview_bg_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._ht_node_preview_bg.material.opacity = v * me._ht_node_preview_bg.userData.backgroundColorAlpha;
+			if (me._ht_node_preview_bg.userData.ggSubElement) {
+				me._ht_node_preview_bg.userData.ggSubElement.material.opacity = v
+				me._ht_node_preview_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_preview_bg.userData.visible);
+			}
+			me._ht_node_preview_bg.visible = (v>0 && me._ht_node_preview_bg.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._ht_node_preview_bg.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._ht_node_preview_bg.userData.backgroundColorAlpha = v;
+			me._ht_node_preview_bg.userData.setOpacity(me._ht_node_preview_bg.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0.66);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 180;
+		el.userData.height = 120;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_preview_bg';
+		el.userData.x = 0;
+		el.userData.y = 0.66;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.010);
+		el.renderOrder = 1;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_preview_bg.visible
+			let parentEl = me._ht_node_preview_bg.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_preview_bg.userData.opacity = v;
+			v = v * me._ht_node_preview_bg.userData.parentOpacity;
+			me._ht_node_preview_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_bg.children.length; i++) {
+				let child = me._ht_node_preview_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_preview_bg.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_bg.userData.opacity
+			me._ht_node_preview_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_bg.children.length; i++) {
+				let child = me._ht_node_preview_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_preview_bg = el;
+		el.userData.ggId="ht_node_preview_bg";
+		me._ht_node_preview_bg.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.elementMouseOver['ht_node_2_vr'] == true)) && 
+				((me.hotspot.customimage == ""))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_node_preview_bg.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_preview_bg.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_preview_bg.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_preview_bg.visible=((!me._ht_node_preview_bg.material && Number(me._ht_node_preview_bg.userData.opacity>0)) || Number(me._ht_node_preview_bg.material.opacity)>0)?true:false;
+			me._ht_node_preview_bg.userData.visible=true;
+				}
+				else {
+			me._ht_node_preview_bg.visible=false;
+			me._ht_node_preview_bg.userData.visible=false;
+				}
+			}
+		}
+		me._ht_node_preview_bg.logicBlock_visible();
+		me._ht_node_preview_bg.userData.ggUpdatePosition=function (useTransition) {
+		}
+		width = 1.72;
+		height = 1.12;
+		roundedRectShape = new THREE.Shape();
+		roundedRectShape.moveTo((-width / 2.0) + 0.05, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - 0.05, (height / 2.0));
+		roundedRectShape.arc(0, -0.05, 0.05, Math.PI / 2.0, 2.0 * Math.PI, true);
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.05);
+		roundedRectShape.arc(-0.05, 0, 0.05, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		roundedRectShape.lineTo((-width / 2.0) + 0.05, (-height / 2.0));
+		roundedRectShape.arc(0, 0.05, 0.05, 3.0 * Math.PI / 2.0, Math.PI, true);
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.05);
+		roundedRectShape.arc(0.05, 0, 0.05, Math.PI, Math.PI / 2.0, true);
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = 'ht_node_preview_img_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+		loader = new THREE.TextureLoader();
+		el.userData.ggNodeId=nodeId;
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img_' + nodeId + '.jpg');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'ht_node_preview_img_material';
+		el = new THREE.Mesh( geometry, material );
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 172;
+		el.userData.height = 112;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_preview_img';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._ht_node_preview_img.material) me._ht_node_preview_img.material.opacity = v;
+			me._ht_node_preview_img.visible = (v>0 && me._ht_node_preview_img.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_preview_img.visible
+			let parentEl = me._ht_node_preview_img.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_preview_img.userData.opacity = v;
+			v = v * me._ht_node_preview_img.userData.parentOpacity;
+			me._ht_node_preview_img.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
+				let child = me._ht_node_preview_img.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_preview_img.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img.userData.opacity
+			me._ht_node_preview_img.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
+				let child = me._ht_node_preview_img.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_preview_img = el;
+		el.userData.ggId="ht_node_preview_img";
+		me._ht_node_preview_img.userData.ggIsActive=function() {
+			return player.getCurrentNode()==this.userData.ggElementNodeId();
+		}
+		el.userData.ggElementNodeId=function() {
+			return this.userData.ggNodeId;
+		}
+		me._ht_node_preview_img.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._ht_node_preview_bg.add(me._ht_node_preview_img);
+		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
+		geometry.name = 'ht_node_preview_title_geometry';
+		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'ht_node_preview_title_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 0.588235;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._ht_node_preview_title.material.opacity = v;
+			if (me._ht_node_preview_title.userData.hasScrollbar) {
+				me._ht_node_preview_title.userData.scrollbar.material.opacity = v;
+				me._ht_node_preview_title.userData.scrollbarBg.material.opacity = v;
+			}
+			if (me._ht_node_preview_title.userData.ggSubElement) {
+				me._ht_node_preview_title.userData.ggSubElement.material.opacity = v
+				me._ht_node_preview_title.userData.ggSubElement.visible = (v>0 && me._ht_node_preview_title.userData.visible);
+			}
+			me._ht_node_preview_title.visible = (v>0 && me._ht_node_preview_title.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._ht_node_preview_title.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._ht_node_preview_title.userData.backgroundColorAlpha = v;
+			me._ht_node_preview_title.userData.setOpacity(me._ht_node_preview_title.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0.42);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 180;
+		el.userData.height = 36;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_preview_title';
+		el.userData.x = 0;
+		el.userData.y = 0.42;
+		el.userData.hanchor = 0;
+		el.userData.vanchor = 0;
+		el.translateZ(0.030);
+		el.renderOrder = 3;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_preview_title.visible
+			let parentEl = me._ht_node_preview_title.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_preview_title.userData.opacity = v;
+			v = v * me._ht_node_preview_title.userData.parentOpacity;
+			me._ht_node_preview_title.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
+				let child = me._ht_node_preview_title.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_preview_title.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_title.userData.opacity
+			me._ht_node_preview_title.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
+				let child = me._ht_node_preview_title.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_preview_title = el;
+		el.userData.textLines = [];
+		el.userData.backgroundColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
+		el.userData.textColor = new THREE.Color(0, 0, 0).convertSRGBToLinear();
+		el.userData.textColorAlpha = 1;
+		var canvas = document.createElement('canvas');
+		canvas.width = 360;
+		canvas.height = 72;
+		el.userData.textCanvas = canvas;
+		el.userData.textCanvasContext = canvas.getContext('2d');
+		el.userData.ggStripTags = function(text) {
+			let doc = new DOMParser().parseFromString(text, 'text/html');
+			return doc.body.textContent || '';
+		}
+		el.userData.ggWrapText = function(scrollbar) {
+			me._ht_node_preview_title.userData.totalHeightCanv = 2 * (7);
+			me._ht_node_preview_title.userData.textLines = [];
+			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
+			var words = [];
+			let tmpText = String(me._ht_node_preview_title.userData.ggText);
+			let whiteSpaceIndex = -1;
+			do {
+				whiteSpaceIndex = tmpText.search(/[\s]/);
+				if (whiteSpaceIndex != -1) {
+					words.push(tmpText.substr(0, whiteSpaceIndex));
+					tmpText = tmpText.substr(whiteSpaceIndex);
+					if (tmpText.charAt(0) == '\n') {
+						words.push('\n');
+					}
+					tmpText = tmpText.substr(1);
+				} else {
+					words.push(tmpText);
+				}
+			} while (whiteSpaceIndex != -1);
+			var line = '';
+			for (var i = 0; i < words.length; i++) {
+				if (words[i] == '\n') {
+					me._ht_node_preview_title.userData.textLines.push(line);
+					line = '';
+					me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
+					continue;
+				}
+				var testLine;
+				if (line == '') {
+					testLine = words[i]
+				} else {
+					testLine = line + ' ' + words[i];
+				}
+				var metrics = ctx.measureText(testLine);
+				var testWidth = metrics.width;
+				if (testWidth > (2 * (me._ht_node_preview_title.userData.width - 0 - (scrollbar ? 25 : 0))) && i > 0) {
+					me._ht_node_preview_title.userData.textLines.push(line);
+					line = words[i];
+					me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
+				} else {
+					line = testLine;
+				}
+			}
+			me._ht_node_preview_title.userData.textLines.push(line);
+			me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
+		}
+		el.userData.ggPaintCanvasText = function() {
+			var canv = me._ht_node_preview_title.userData.textCanvas;
+			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
+			ctx.clearRect(0, 0, canv.width, canv.height);
+			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title.userData.backgroundColor.r * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColor.g * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColor.b * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColorAlpha + ')';
+			ctx.fillRect(0, 0, canv.width, canv.height);
+			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title.userData.textColor.r * 255 + ', ' + me._ht_node_preview_title.userData.textColor.g * 255 + ', ' + me._ht_node_preview_title.userData.textColor.b * 255 + ', ' + me._ht_node_preview_title.userData.textColorAlpha + ')';
+			ctx.textBaseline = 'top';
+			var x = (me._ht_node_preview_title.userData.boxWidthCanv - (me._ht_node_preview_title.userData.hasScrollbar ? 50 : 0)) / 2;
+			ctx.textAlign = 'center';
+			var y = 2 * 7;
+			y += (canv.height - me._ht_node_preview_title.userData.totalHeightCanv - (2 * 0)) / 2;
+			for (var i = 0; i < me._ht_node_preview_title.userData.textLines.length; i++) {
+				ctx.fillText(me._ht_node_preview_title.userData.textLines[i], x, y);
+				y += me._ht_node_preview_title.userData.lineHeightCanv;
+			}
+			var textTexture = new THREE.CanvasTexture(canv);
+			textTexture.name = 'ht_node_preview_title_texture';
+			textTexture.minFilter = THREE.LinearFilter;
+			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
+			textTexture.wrapS = THREE.ClampToEdgeWrapping;
+			textTexture.wrapT = THREE.ClampToEdgeWrapping;
+			if (me._ht_node_preview_title.material.map) {
+				me._ht_node_preview_title.material.map.dispose();
+			}
+			me._ht_node_preview_title.material.map = textTexture;
+		}
+		el.userData.ggRenderText = function() {
+			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
+				let child = me._ht_node_preview_title.children[i];
+				if (child.name.includes('scrollbar')) me._ht_node_preview_title.remove(child);
+			}
+			var canv = me._ht_node_preview_title.userData.textCanvas;
+			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
+			ctx.font = '28px Verdana';
+			me._ht_node_preview_title.userData.lineHeightCanv = 33.6;
+			me._ht_node_preview_title.userData.ggWrapText(false);
+			me._ht_node_preview_title.userData.boxWidthCanv = 2 * me._ht_node_preview_title.userData.width;
+			me._ht_node_preview_title.userData.boxHeightCanv = 2 * me._ht_node_preview_title.userData.height;
+			me._ht_node_preview_title.userData.hasScrollbar = false;
+			canv.width = me._ht_node_preview_title.userData.boxWidthCanv;
+			canv.height = me._ht_node_preview_title.userData.boxHeightCanv;
+			ctx.font = '28px Verdana';
+			me._ht_node_preview_title.userData.ggPaintCanvasText();
+		}
+		me._ht_node_preview_title.userData.ggUpdateText=function(force) {
+			var params = [];
+			params.push(player._(String(player._(me.hotspot.title))));
+			var hs = player._("%1", params);
+			if (hs!=this.ggText || force) {
+				this.ggText=me._ht_node_preview_title.userData.ggStripTags(hs);
+				this.ggRenderText();
+			}
+		}
+		me._ht_node_preview_title.userData.ggUpdateText();
+		el.userData.setBackgroundColor = function(v) {
+			me._ht_node_preview_title.userData.backgroundColor = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._ht_node_preview_title.userData.backgroundColorAlpha = v;
+		}
+		el.userData.setTextColor = function(v) {
+			me._ht_node_preview_title.userData.textColor = v;
+		}
+		el.userData.setTextColorAlpha = function(v) {
+			me._ht_node_preview_title.userData.textColorAlpha = v;
+		}
+		el.userData.ggId="ht_node_preview_title";
+		me._ht_node_preview_title.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player._(me.hotspot.title) == ""))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_node_preview_title.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_preview_title.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_preview_title.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_preview_title.visible=false;
+			me._ht_node_preview_title.userData.visible=false;
+				}
+				else {
+			me._ht_node_preview_title.visible=((!me._ht_node_preview_title.material && Number(me._ht_node_preview_title.userData.opacity>0)) || Number(me._ht_node_preview_title.material.opacity)>0)?true:false;
+			me._ht_node_preview_title.userData.visible=true;
+				}
+			}
+		}
+		me._ht_node_preview_title.logicBlock_visible();
+		me._ht_node_preview_title.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._ht_node_preview_bg.add(me._ht_node_preview_title);
+		me._ht_node_2_vr.add(me._ht_node_preview_bg);
+		width = 0.32;
+		height = 0.48;
+		roundedRectShape = new THREE.Shape();
+		roundedRectShape.moveTo((-width / 2.0) + 0.16, (height / 2.0));
+		roundedRectShape.lineTo((width / 2.0) - 0.16, (height / 2.0));
+		roundedRectShape.arc(0, -0.16, 0.16, Math.PI / 2.0, 2.0 * Math.PI, true);
+		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.16);
+		roundedRectShape.arc(-0.16, 0, 0.16, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
+		roundedRectShape.lineTo((-width / 2.0) + 0.16, (-height / 2.0));
+		roundedRectShape.arc(0, 0.16, 0.16, 3.0 * Math.PI / 2.0, Math.PI, true);
+		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.16);
+		roundedRectShape.arc(0.16, 0, 0.16, Math.PI, Math.PI / 2.0, true);
+		geometry = new THREE.ShapeGeometry(roundedRectShape);
+		geometry.name = 'ht_node_bg_geometry';
+		geometry.computeBoundingBox();
+		var min = geometry.boundingBox.min;
+		var max = geometry.boundingBox.max;
+		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
+		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
+		var vertexPositions = geometry.getAttribute('position');
+		var vertexUVs = geometry.getAttribute('uv');
+		for (var i = 0; i < vertexPositions.count; i++) {
+			var v1 = vertexPositions.getX(i);
+			var	v2 = vertexPositions.getY(i);
+			vertexUVs.setX(i, (v1 + offset.x) / range.x);
+			vertexUVs.setY(i, (v2 + offset.y) / range.y);
+		}
+		geometry.uvsNeedUpdate = true;
+		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.117647, 0.117647, 0.117647).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
+		material.name = 'ht_node_bg_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			me._ht_node_bg.material.opacity = v * me._ht_node_bg.userData.backgroundColorAlpha;
+			if (me._ht_node_bg.userData.ggSubElement) {
+				me._ht_node_bg.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_bg.userData.visible);
+			}
+			me._ht_node_bg.visible = (v>0 && me._ht_node_bg.userData.visible);
+		}
+		el.userData.setBackgroundColor = function(v) {
+			me._ht_node_bg.material.color = v;
+		}
+		el.userData.setBackgroundColorAlpha = function(v) {
+			me._ht_node_bg.userData.backgroundColorAlpha = v;
+			me._ht_node_bg.userData.setOpacity(me._ht_node_bg.userData.opacity);
+		}
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 32;
+		el.userData.height = 48;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_bg';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_bg.visible
+			let parentEl = me._ht_node_bg.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_bg.userData.opacity = v;
+			v = v * me._ht_node_bg.userData.parentOpacity;
+			me._ht_node_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
+				let child = me._ht_node_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_bg.userData.parentOpacity = v;
+			v = v * me._ht_node_bg.userData.opacity
+			me._ht_node_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
+				let child = me._ht_node_bg.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_bg = el;
+		el.userData.ggId="ht_node_bg";
+		me._ht_node_bg.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.hotspot.customimage != ""))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_node_bg.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_bg.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_bg.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_bg.visible=false;
+			me._ht_node_bg.userData.visible=false;
+				}
+				else {
+			me._ht_node_bg.visible=((!me._ht_node_bg.material && Number(me._ht_node_bg.userData.opacity>0)) || Number(me._ht_node_bg.material.opacity)>0)?true:false;
+			me._ht_node_bg.userData.visible=true;
+				}
+			}
+		}
+		me._ht_node_bg.logicBlock_visible();
+		me._ht_node_bg.userData.ggUpdatePosition=function (useTransition) {
+		}
+		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
+		geometry.name = 'ht_node_icon_geometry';
+		loader = new THREE.TextureLoader();
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABKElEQVR4nO3WTa6CQBBFYeMiYE2u35+FOHVw36QwndYWGp/etjlfYkwQsepgorsdAAAAAAAAAAAAAAAfJWmUNLrnsJA0SDrFY3DP81XJ8pPjZiJky1/jsY0I2fLH5BtwSp77jBDLn9O7nQQYuo6QLX9fcNo+Oae/CKXl47V7gLlzf1L8zhcXygPEsT4izC0f5zwEiONphPPPRciWLy5QClBzjebUDP4qQOFabf9tjoEvS+/aXIDkmu1HqF0+3jMbILl2uxGeLL9owKUB3vmMr5B0kHSrHawmQJw/RbhJOqyb9kMiQtVdqQ0Q7xmbW36tNQH+29754S0ggHsANwK4B3AjgHsANwK4B3AjgHsANwK4B3AjgHsAt80HAAAAAAAAAAAAAAAA/fsD3e5g+r'+
+	'A5Qy8AAAAASUVORK5CYII=');
+		texture.colorSpace = player.getVRTextureColorSpace();
+		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+		material.name = 'ht_node_icon_material';
+		el = new THREE.Mesh( geometry, material );
+		el.userData.materialNormal = material;
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 32;
+		el.userData.height = 48;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_icon';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.030);
+		el.renderOrder = 3;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._ht_node_icon.material) me._ht_node_icon.material.opacity = v;
+			me._ht_node_icon.visible = (v>0 && me._ht_node_icon.userData.visible);
+		}
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_icon.visible
+			let parentEl = me._ht_node_icon.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_icon.userData.opacity = v;
+			v = v * me._ht_node_icon.userData.parentOpacity;
+			me._ht_node_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_icon.children.length; i++) {
+				let child = me._ht_node_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_icon.userData.parentOpacity = v;
+			v = v * me._ht_node_icon.userData.opacity
+			me._ht_node_icon.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_icon.children.length; i++) {
+				let child = me._ht_node_icon.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = true;
+		el.userData.visible = true;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_icon = el;
+		textureOver = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABQ0lEQVR4nO3US27CQBBFUZyNRGJPsSFhxP5XEAg3k0JyEtu4I6Py5x7JE7uarvcG7HaSJEmSJEmSJEmSpOcCGuCUvUcK4AB8xbOtEoBjBL/bTgkd4bdTwkD49ZcAvD8Iv94SCsKvr4Se8H3/AesqAfjoCXbsKKBZVQlD4eP7D/FuHSUMhD+0Zv4UEO+XXcKY8DHXWUB8a4Dr4koATj3hm47Z3gLi+7JK6Al/7Qof84MFxMwyShgIXw+ceVhAzNWzLgHYA5eS8HFuVAEx21XCBdhPm+afgDNwa4V/G3FmdAEx3y7hBpyn2X4iUcLnmPAxX1RAnKnjjnmFvwNeC2aLCyi9Y4xqyh8r8Tt0VVUpu7xkXDonFpC9QDYLyF4gmwVkL5DNArIXyGYB2Qtks4'+
+	'DsBbJZQPYCkiRJkiRJkiRJkiRJz/YNetqxr5cWMbcAAAAASUVORK5CYII=');
+		textureOver.colorSpace = player.getVRTextureColorSpace();
+		el.userData.materialOver = new THREE.MeshBasicMaterial( {map: textureOver, side: THREE.DoubleSide, transparent: true} );
+		el.userData.materialOver.name = 'ht_node_icon_materialOver';
+		el.userData.ggId="ht_node_icon";
+		me._ht_node_icon.userData.onmouseenter=function (e) {
+			me._ht_node_icon.material = me._ht_node_icon.userData.materialOver;
+			me.elementMouseOver['ht_node_icon']=true;
+		}
+		me._ht_node_icon.userData.onmouseleave=function (e) {
+			me._ht_node_icon.material = me._ht_node_icon.userData.materialNormal;
+			me.elementMouseOver['ht_node_icon']=false;
+		}
+		me._ht_node_icon.userData.ggUpdatePosition=function (useTransition) {
+		}
+		me._ht_node_bg.add(me._ht_node_icon);
+		me._ht_node_2_vr.add(me._ht_node_bg);
+		el = new THREE.Group();
+		el.userData.backgroundColorAlpha = 1;
+		el.userData.borderColorAlpha = 1;
+		el.userData.setOpacityInternal = function(v) {
+			if (me._ht_node_custom_image.userData.ggSubElement) {
+				me._ht_node_custom_image.userData.ggSubElement.material.opacity = v
+				me._ht_node_custom_image.userData.ggSubElement.visible = (v>0 && me._ht_node_custom_image.userData.visible);
+			}
+			me._ht_node_custom_image.visible = (v>0 && me._ht_node_custom_image.userData.visible);
+		}
+		el.translateX(0);
+		el.translateY(0);
+		el.scale.set(1.00, 1.00, 1.0);
+		el.userData.width = 50;
+		el.userData.height = 50;
+		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
+		el.userData.curScaleOffX = 0;
+		el.userData.curScaleOffY = 0;
+		el.name = 'ht_node_custom_image';
+		el.userData.x = 0;
+		el.userData.y = 0;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
+		el.translateZ(0.030);
+		el.renderOrder = 3;
+		el.rotateZ(0.00);
+		el.userData.angle = 0.00;
+		el.userData.isVisible = function() {
+			let vis = me._ht_node_custom_image.visible
+			let parentEl = me._ht_node_custom_image.parent;
+			while (vis && parentEl) {
+				if (!parentEl.visible) {
+					vis = false;
+					break;
+				}
+				parentEl = parentEl.parent;
+			}
+			return vis;
+		}
+		el.userData.setOpacity = function(v) {
+			me._ht_node_custom_image.userData.opacity = v;
+			v = v * me._ht_node_custom_image.userData.parentOpacity;
+			me._ht_node_custom_image.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_custom_image.children.length; i++) {
+				let child = me._ht_node_custom_image.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.userData.setParentOpacity = function(v) {
+			me._ht_node_custom_image.userData.parentOpacity = v;
+			v = v * me._ht_node_custom_image.userData.opacity
+			me._ht_node_custom_image.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_custom_image.children.length; i++) {
+				let child = me._ht_node_custom_image.children[i];
+				if (child.userData.setParentOpacity) {
+					child.userData.setParentOpacity(v);
+				}
+			};
+		}
+		el.visible = false;
+		el.userData.visible = false;
+		el.userData.opacity = 1.00;
+		el.userData.parentOpacity = 1.0;
+		el.userData.transitions = [];
+		me._ht_node_custom_image = el;
+		currentWidth = 50;
+		currentHeight = 50;
+		var img = {};
+		img.geometry = new THREE.PlaneGeometry(currentWidth / 100.0, currentHeight / 100.0, 5, 5 );
+		img.geometry.name = 'ht_node_custom_image_imgGeometry';
+		loader = new THREE.TextureLoader();
+		el.userData.ggSetUrl = function(extUrl) {
+			loader.load(extUrl,
+				function (texture) {
+				texture.colorSpace = player.getVRTextureColorSpace();
+				var loadedMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
+				loadedMaterial.name = 'ht_node_custom_image_subElementMaterial';
+				me._ht_node_custom_image.userData.ggSubElement.material = loadedMaterial;
+				me._ht_node_custom_image.userData.ggUpdatePosition();
+				me._ht_node_custom_image.userData.ggText = extUrl;
+				me._ht_node_custom_image.userData.setOpacity(me._ht_node_custom_image.userData.opacity);
+			});
+		};
+		if ((hotspot) && (hotspot.customimage)) {
+			var extUrl=hotspot.customimage;
+		}
+		el.userData.ggSetUrl(extUrl);
+		material = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, transparent: true } );
+		material.name = 'ht_node_custom_image_subElementMaterial';
+		el.userData.ggSubElement = new THREE.Mesh( img.geometry, material );
+		el.userData.ggSubElement.name = 'ht_node_custom_image_subElement';
+		el.userData.ggSubElement.position.z = el.position.z + 0.005;
+		el.add(el.userData.ggSubElement);
+		el.userData.clientWidth = 50;
+		el.userData.clientHeight = 50;
+		el.userData.ggId="ht_node_custom_image";
+		me._ht_node_custom_image.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.hotspot.customimage != ""))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_node_custom_image.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_custom_image.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_custom_image.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_custom_image.visible=((!me._ht_node_custom_image.material && Number(me._ht_node_custom_image.userData.opacity>0)) || Number(me._ht_node_custom_image.material.opacity)>0)?true:false;
+			me._ht_node_custom_image.userData.visible=true;
+				}
+				else {
+			me._ht_node_custom_image.visible=false;
+			me._ht_node_custom_image.userData.visible=false;
+				}
+			}
+		}
+		me._ht_node_custom_image.logicBlock_visible();
+		me._ht_node_custom_image.userData.ggUpdatePosition=function (useTransition) {
+			var parentWidth = me._ht_node_custom_image.userData.clientWidth;
+			var parentHeight = me._ht_node_custom_image.userData.clientHeight;
+			var img = me._ht_node_custom_image.userData.ggSubElement;
+			var imgWidth = img.material.map.image.naturalWidth;
+			var imgHeight = img.material.map.image.naturalHeight;
+			var aspectRatioDiv = parentWidth / parentHeight;
+			var aspectRatioImg = imgWidth / imgHeight;
+			if (imgWidth < parentWidth) parentWidth = imgWidth;
+			if (imgHeight < parentHeight) parentHeight = imgHeight;
+			var currentWidth, currentHeight;
+			img.geometry.dispose();
+			if ((hotspot) && (hotspot.customimage)) {
+				currentWidth  = hotspot.customimagewidth;
+				currentHeight = hotspot.customimageheight;
+			img.geometry = new THREE.PlaneGeometry(currentWidth / 100.0, currentHeight / 100.0, 5, 5 );
+			img.geometry.name = 'ht_node_custom_image_imgGeometry';
+			}
+		}
+		me._ht_node_2_vr.add(me._ht_node_custom_image);
+		me._ht_node_2_vr.logicBlock_visible();
+		me._ht_node_2_vr.userData.setOpacity(1.00);
+		me.elementMouseOver['ht_node_2_vr']=false;
+		me._ht_node_preview_bg.logicBlock_visible();
+		me._ht_node_preview_bg.userData.setOpacity(1.00);
+		me._ht_node_preview_img.userData.setOpacity(1.00);
+		me._ht_node_preview_title.logicBlock_visible();
+		me._ht_node_preview_title.userData.setOpacity(1.00);
+		me._ht_node_bg.logicBlock_visible();
+		me._ht_node_bg.userData.setOpacity(1.00);
+		me._ht_node_icon.userData.setOpacity(1.00);
+		me.elementMouseOver['ht_node_icon']=false;
+		me._ht_node_custom_image.logicBlock_visible();
+		me._ht_node_custom_image.userData.setOpacity(1.00);
+			me.ggEvent_activehotspotchanged=function() {
+				me._ht_node_preview_bg.logicBlock_visible();
+				me._ht_node_preview_title.logicBlock_visible();
+				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_custom_image.logicBlock_visible();
+			};
+			me.ggEvent_changenode=function() {
+				me._ht_node_2_vr.logicBlock_visible();
+				me._ht_node_preview_bg.logicBlock_visible();
+					me._ht_node_preview_title.userData.ggUpdateText();
+				me._ht_node_preview_title.logicBlock_visible();
+				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_custom_image.logicBlock_visible();
+			};
+			me.ggEvent_configloaded=function() {
+				me._ht_node_2_vr.logicBlock_visible();
+				me._ht_node_preview_bg.logicBlock_visible();
+				me._ht_node_preview_title.logicBlock_visible();
+				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_custom_image.logicBlock_visible();
+			};
+			me.ggEvent_varchanged_vis_skin=function() {
+				me._ht_node_2_vr.logicBlock_visible();
+			};
+			me.__obj = me._ht_node_2_vr;
+			me.__obj.userData.hotspot = hotspot;
+			me.__obj.userData.fromSkin = true;
+	};
 	function SkinHotspotClass_ht_node_vr_1(parentScope,hotspot) {
 		var me=this;
 		var flag=false;
@@ -18866,750 +19311,6 @@ document.addEventListener('keydown', (e) => {
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_preview_bg.material.opacity = v * me._ht_node_preview_bg.userData.backgroundColorAlpha;
-			if (me._ht_node_preview_bg.userData.ggSubElement) {
-				me._ht_node_preview_bg.userData.ggSubElement.material.opacity = v
-				me._ht_node_preview_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_preview_bg.userData.visible);
-			}
-			me._ht_node_preview_bg.visible = (v>0 && me._ht_node_preview_bg.userData.visible);
-		}
-		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_preview_bg.material.color = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_preview_bg.userData.backgroundColorAlpha = v;
-			me._ht_node_preview_bg.userData.setOpacity(me._ht_node_preview_bg.userData.opacity);
-		}
-		el.translateX(-0.07);
-		el.translateY(1.42);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 630;
-		el.userData.height = 236;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_preview_bg';
-		el.userData.x = -0.07;
-		el.userData.y = 1.42;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.010);
-		el.renderOrder = 1;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_bg.visible
-			let parentEl = me._ht_node_preview_bg.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_bg.userData.opacity = v;
-			v = v * me._ht_node_preview_bg.userData.parentOpacity;
-			me._ht_node_preview_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_bg.children.length; i++) {
-				let child = me._ht_node_preview_bg.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_bg.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_bg.userData.opacity
-			me._ht_node_preview_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_bg.children.length; i++) {
-				let child = me._ht_node_preview_bg.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_preview_bg = el;
-		el.userData.ggId="ht_node_preview_bg";
-		me._ht_node_preview_bg.userData.ggUpdatePosition=function (useTransition) {
-		}
-		geometry = new THREE.PlaneGeometry(6.3, 2.26, 5, 5 );
-		geometry.name = 'ht_node_preview_title_geometry';
-		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'ht_node_preview_title_material';
-		el = new THREE.Mesh( geometry, material );
-		el.userData.backgroundColorAlpha = 0.588235;
-		el.userData.borderColorAlpha = 1;
-		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_preview_title.material.opacity = v;
-			if (me._ht_node_preview_title.userData.hasScrollbar) {
-				me._ht_node_preview_title.userData.scrollbar.material.opacity = v;
-				me._ht_node_preview_title.userData.scrollbarBg.material.opacity = v;
-			}
-			if (me._ht_node_preview_title.userData.ggSubElement) {
-				me._ht_node_preview_title.userData.ggSubElement.material.opacity = v
-				me._ht_node_preview_title.userData.ggSubElement.visible = (v>0 && me._ht_node_preview_title.userData.visible);
-			}
-			me._ht_node_preview_title.visible = (v>0 && me._ht_node_preview_title.userData.visible);
-		}
-		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_preview_title.material.color = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_preview_title.userData.backgroundColorAlpha = v;
-			me._ht_node_preview_title.userData.setOpacity(me._ht_node_preview_title.userData.opacity);
-		}
-		el.translateX(0);
-		el.translateY(0.04);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 630;
-		el.userData.height = 226;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_preview_title';
-		el.userData.x = 0;
-		el.userData.y = 0.04;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.020);
-		el.renderOrder = 2;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_title.visible
-			let parentEl = me._ht_node_preview_title.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_title.userData.opacity = v;
-			v = v * me._ht_node_preview_title.userData.parentOpacity;
-			me._ht_node_preview_title.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
-				let child = me._ht_node_preview_title.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_title.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_title.userData.opacity
-			me._ht_node_preview_title.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
-				let child = me._ht_node_preview_title.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_preview_title = el;
-		el.userData.textLines = [];
-		el.userData.backgroundColor = new THREE.Color(1, 1, 1).convertSRGBToLinear();
-		el.userData.textColor = new THREE.Color(0, 0, 0).convertSRGBToLinear();
-		el.userData.textColorAlpha = 1;
-		var canvas = document.createElement('canvas');
-		canvas.width = 1260;
-		canvas.height = 452;
-		el.userData.textCanvas = canvas;
-		el.userData.textCanvasContext = canvas.getContext('2d');
-		el.userData.ggStripTags = function(text) {
-			let doc = new DOMParser().parseFromString(text, 'text/html');
-			return doc.body.textContent || '';
-		}
-		el.userData.ggWrapText = function(scrollbar) {
-			me._ht_node_preview_title.userData.totalHeightCanv = 2 * (7);
-			me._ht_node_preview_title.userData.textLines = [];
-			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
-			var words = [];
-			let tmpText = String(me._ht_node_preview_title.userData.ggText);
-			let whiteSpaceIndex = -1;
-			do {
-				whiteSpaceIndex = tmpText.search(/[\s]/);
-				if (whiteSpaceIndex != -1) {
-					words.push(tmpText.substr(0, whiteSpaceIndex));
-					tmpText = tmpText.substr(whiteSpaceIndex);
-					if (tmpText.charAt(0) == '\n') {
-						words.push('\n');
-					}
-					tmpText = tmpText.substr(1);
-				} else {
-					words.push(tmpText);
-				}
-			} while (whiteSpaceIndex != -1);
-			var line = '';
-			for (var i = 0; i < words.length; i++) {
-				if (words[i] == '\n') {
-					me._ht_node_preview_title.userData.textLines.push(line);
-					line = '';
-					me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
-					continue;
-				}
-				var testLine;
-				if (line == '') {
-					testLine = words[i]
-				} else {
-					testLine = line + ' ' + words[i];
-				}
-				var metrics = ctx.measureText(testLine);
-				var testWidth = metrics.width;
-				if (testWidth > (2 * (me._ht_node_preview_title.userData.width - 0 - (scrollbar ? 25 : 0))) && i > 0) {
-					me._ht_node_preview_title.userData.textLines.push(line);
-					line = words[i];
-					me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
-				} else {
-					line = testLine;
-				}
-			}
-			me._ht_node_preview_title.userData.textLines.push(line);
-			me._ht_node_preview_title.userData.totalHeightCanv += me._ht_node_preview_title.userData.lineHeightCanv;
-		}
-		el.userData.ggPaintCanvasText = function() {
-			var canv = me._ht_node_preview_title.userData.textCanvas;
-			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
-			ctx.clearRect(0, 0, canv.width, canv.height);
-			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title.userData.backgroundColor.r * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColor.g * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColor.b * 255 + ', ' + me._ht_node_preview_title.userData.backgroundColorAlpha + ')';
-			ctx.fillRect(0, 0, canv.width, canv.height);
-			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title.userData.textColor.r * 255 + ', ' + me._ht_node_preview_title.userData.textColor.g * 255 + ', ' + me._ht_node_preview_title.userData.textColor.b * 255 + ', ' + me._ht_node_preview_title.userData.textColorAlpha + ')';
-			ctx.textBaseline = 'top';
-			var x = 2 * 0;
-			ctx.textAlign = 'left';
-			var y = 2 * 7;
-			for (var i = 0; i < me._ht_node_preview_title.userData.textLines.length; i++) {
-				ctx.fillText(me._ht_node_preview_title.userData.textLines[i], x, y);
-				y += me._ht_node_preview_title.userData.lineHeightCanv;
-			}
-			var textTexture = new THREE.CanvasTexture(canv);
-			textTexture.name = 'ht_node_preview_title_texture';
-			textTexture.minFilter = THREE.LinearFilter;
-			textTexture.colorSpace = THREE.LinearSRGBColorSpace;
-			textTexture.wrapS = THREE.ClampToEdgeWrapping;
-			textTexture.wrapT = THREE.ClampToEdgeWrapping;
-			if (me._ht_node_preview_title.material.map) {
-				me._ht_node_preview_title.material.map.dispose();
-			}
-			me._ht_node_preview_title.material.map = textTexture;
-		}
-		el.userData.ggRenderText = function() {
-			for (let i = 0; i < me._ht_node_preview_title.children.length; i++) {
-				let child = me._ht_node_preview_title.children[i];
-				if (child.name.includes('scrollbar')) me._ht_node_preview_title.remove(child);
-			}
-			var canv = me._ht_node_preview_title.userData.textCanvas;
-			var ctx = me._ht_node_preview_title.userData.textCanvasContext;
-			ctx.font = '28px Verdana';
-			me._ht_node_preview_title.userData.lineHeightCanv = 33.6;
-			me._ht_node_preview_title.userData.ggWrapText(false);
-			me._ht_node_preview_title.userData.boxWidthCanv = 2 * me._ht_node_preview_title.userData.width;
-			me._ht_node_preview_title.userData.boxHeightCanv = 2 * me._ht_node_preview_title.userData.height;
-			me._ht_node_preview_title.userData.hasScrollbar = false;
-			canv.width = me._ht_node_preview_title.userData.boxWidthCanv;
-			canv.height = me._ht_node_preview_title.userData.boxHeightCanv;
-			ctx.font = '28px Verdana';
-			me._ht_node_preview_title.userData.ggPaintCanvasText();
-		}
-		me._ht_node_preview_title.userData.ggUpdateText=function(force) {
-			var params = [];
-			params.push(player._(String(player._(me.hotspot.description))));
-			var hs = player._("%1", params);
-			if (hs!=this.ggText || force) {
-				this.ggText=me._ht_node_preview_title.userData.ggStripTags(hs);
-				this.ggRenderText();
-			}
-		}
-		me._ht_node_preview_title.userData.ggUpdateText();
-		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_preview_title.userData.backgroundColor = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_preview_title.userData.backgroundColorAlpha = v;
-		}
-		el.userData.setTextColor = function(v) {
-			me._ht_node_preview_title.userData.textColor = v;
-		}
-		el.userData.setTextColorAlpha = function(v) {
-			me._ht_node_preview_title.userData.textColorAlpha = v;
-		}
-		el.userData.ggId="ht_node_preview_title";
-		me._ht_node_preview_title.userData.ggUpdatePosition=function (useTransition) {
-		}
-		me._ht_node_preview_bg.add(me._ht_node_preview_title);
-		me._ht_node_vr_1.add(me._ht_node_preview_bg);
-		width = 0.32;
-		height = 0.48;
-		roundedRectShape = new THREE.Shape();
-		roundedRectShape.moveTo((-width / 2.0) + 0.16, (height / 2.0));
-		roundedRectShape.lineTo((width / 2.0) - 0.16, (height / 2.0));
-		roundedRectShape.arc(0, -0.16, 0.16, Math.PI / 2.0, 2.0 * Math.PI, true);
-		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.16);
-		roundedRectShape.arc(-0.16, 0, 0.16, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		roundedRectShape.lineTo((-width / 2.0) + 0.16, (-height / 2.0));
-		roundedRectShape.arc(0, 0.16, 0.16, 3.0 * Math.PI / 2.0, Math.PI, true);
-		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.16);
-		roundedRectShape.arc(0.16, 0, 0.16, Math.PI, Math.PI / 2.0, true);
-		geometry = new THREE.ShapeGeometry(roundedRectShape);
-		geometry.name = 'ht_node_bg_geometry';
-		geometry.computeBoundingBox();
-		var min = geometry.boundingBox.min;
-		var max = geometry.boundingBox.max;
-		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
-		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
-		var vertexPositions = geometry.getAttribute('position');
-		var vertexUVs = geometry.getAttribute('uv');
-		for (var i = 0; i < vertexPositions.count; i++) {
-			var v1 = vertexPositions.getX(i);
-			var	v2 = vertexPositions.getY(i);
-			vertexUVs.setX(i, (v1 + offset.x) / range.x);
-			vertexUVs.setY(i, (v2 + offset.y) / range.y);
-		}
-		geometry.uvsNeedUpdate = true;
-		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.117647, 0.117647, 0.117647).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'ht_node_bg_material';
-		el = new THREE.Mesh( geometry, material );
-		el.userData.backgroundColorAlpha = 1;
-		el.userData.borderColorAlpha = 1;
-		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg.material.opacity = v * me._ht_node_bg.userData.backgroundColorAlpha;
-			if (me._ht_node_bg.userData.ggSubElement) {
-				me._ht_node_bg.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_bg.userData.visible);
-			}
-			me._ht_node_bg.visible = (v>0 && me._ht_node_bg.userData.visible);
-		}
-		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg.material.color = v;
-		}
-		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg.userData.backgroundColorAlpha = v;
-			me._ht_node_bg.userData.setOpacity(me._ht_node_bg.userData.opacity);
-		}
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 32;
-		el.userData.height = 48;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_bg';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.020);
-		el.renderOrder = 2;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg.visible
-			let parentEl = me._ht_node_bg.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_bg.userData.opacity = v;
-			v = v * me._ht_node_bg.userData.parentOpacity;
-			me._ht_node_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
-				let child = me._ht_node_bg.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg.userData.parentOpacity = v;
-			v = v * me._ht_node_bg.userData.opacity
-			me._ht_node_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
-				let child = me._ht_node_bg.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = false;
-		el.userData.visible = false;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_bg = el;
-		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg.userData.ggUpdatePosition=function (useTransition) {
-		}
-		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
-		geometry.name = 'ht_node_icon_geometry';
-		loader = new THREE.TextureLoader();
-		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABI0lEQVR4nO3aWwqDQAyF4dDluBLB/S+iO+hb+jIBKVJHHeNk8n/Q55xzoBeoIgAAAAAAAAAAAACAfSoyqcj8wN1ZRSbvu78hJhV5q8hHRRbHu0u5+X5shFV5LS+XEVbl7a7/CBvlXUbYKP/MCOX9txXkthH+lLebvp9DFYGajeB5q7tg3Zb3CNh9eXNH0DDlTcvA4cqbFsHDljdXCoQvb84UGaa8OVJouPKmptiw5U1FwXHLm50Rxi5vDowwXnlTMYJ7+ZfnsdRSvwVSfwim/hpM/UPoSLHhRjhTaJgRrhQJP0KLAmFHaBk83Ah3BA4zwp1Bux/BI2C3I3gG624Ezf7nqGb/e7yEyfuAxCpM3kdkVmHyPiQFAAAAAAAAAAAAAFF8AfMbCykcOP+iAA'+
-	'AAAElFTkSuQmCC');
-		texture.colorSpace = player.getVRTextureColorSpace();
-		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
-		material.name = 'ht_node_icon_material';
-		el = new THREE.Mesh( geometry, material );
-		el.userData.materialNormal = material;
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 32;
-		el.userData.height = 48;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_icon';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_icon.material) me._ht_node_icon.material.opacity = v;
-			me._ht_node_icon.visible = (v>0 && me._ht_node_icon.userData.visible);
-		}
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_icon.visible
-			let parentEl = me._ht_node_icon.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_icon.userData.opacity = v;
-			v = v * me._ht_node_icon.userData.parentOpacity;
-			me._ht_node_icon.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_icon.children.length; i++) {
-				let child = me._ht_node_icon.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_icon.userData.parentOpacity = v;
-			v = v * me._ht_node_icon.userData.opacity
-			me._ht_node_icon.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_icon.children.length; i++) {
-				let child = me._ht_node_icon.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_icon = el;
-		el.userData.ggId="ht_node_icon";
-		me._ht_node_icon.userData.ggUpdatePosition=function (useTransition) {
-		}
-		me._ht_node_bg.add(me._ht_node_icon);
-		me._ht_node_vr_1.add(me._ht_node_bg);
-		el = new THREE.Group();
-		el.userData.backgroundColorAlpha = 1;
-		el.userData.borderColorAlpha = 1;
-		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_custom_image.userData.ggSubElement) {
-				me._ht_node_custom_image.userData.ggSubElement.material.opacity = v
-				me._ht_node_custom_image.userData.ggSubElement.visible = (v>0 && me._ht_node_custom_image.userData.visible);
-			}
-			me._ht_node_custom_image.visible = (v>0 && me._ht_node_custom_image.userData.visible);
-		}
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 50;
-		el.userData.height = 50;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_custom_image';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_custom_image.visible
-			let parentEl = me._ht_node_custom_image.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_custom_image.userData.opacity = v;
-			v = v * me._ht_node_custom_image.userData.parentOpacity;
-			me._ht_node_custom_image.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_custom_image.children.length; i++) {
-				let child = me._ht_node_custom_image.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_custom_image.userData.parentOpacity = v;
-			v = v * me._ht_node_custom_image.userData.opacity
-			me._ht_node_custom_image.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_custom_image.children.length; i++) {
-				let child = me._ht_node_custom_image.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = false;
-		el.userData.visible = false;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_custom_image = el;
-		currentWidth = 50;
-		currentHeight = 50;
-		var img = {};
-		img.geometry = new THREE.PlaneGeometry(currentWidth / 100.0, currentHeight / 100.0, 5, 5 );
-		img.geometry.name = 'ht_node_custom_image_imgGeometry';
-		loader = new THREE.TextureLoader();
-		el.userData.ggSetUrl = function(extUrl) {
-			loader.load(extUrl,
-				function (texture) {
-				texture.colorSpace = player.getVRTextureColorSpace();
-				var loadedMaterial = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
-				loadedMaterial.name = 'ht_node_custom_image_subElementMaterial';
-				me._ht_node_custom_image.userData.ggSubElement.material = loadedMaterial;
-				me._ht_node_custom_image.userData.ggUpdatePosition();
-				me._ht_node_custom_image.userData.ggText = extUrl;
-				me._ht_node_custom_image.userData.setOpacity(me._ht_node_custom_image.userData.opacity);
-			});
-		};
-		if ((hotspot) && (hotspot.customimage)) {
-			var extUrl=hotspot.customimage;
-		}
-		el.userData.ggSetUrl(extUrl);
-		material = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, transparent: true } );
-		material.name = 'ht_node_custom_image_subElementMaterial';
-		el.userData.ggSubElement = new THREE.Mesh( img.geometry, material );
-		el.userData.ggSubElement.name = 'ht_node_custom_image_subElement';
-		el.userData.ggSubElement.position.z = el.position.z + 0.005;
-		el.add(el.userData.ggSubElement);
-		el.userData.clientWidth = 50;
-		el.userData.clientHeight = 50;
-		el.userData.ggId="ht_node_custom_image";
-		me._ht_node_custom_image.userData.ggUpdatePosition=function (useTransition) {
-			var parentWidth = me._ht_node_custom_image.userData.clientWidth;
-			var parentHeight = me._ht_node_custom_image.userData.clientHeight;
-			var img = me._ht_node_custom_image.userData.ggSubElement;
-			var imgWidth = img.material.map.image.naturalWidth;
-			var imgHeight = img.material.map.image.naturalHeight;
-			var aspectRatioDiv = parentWidth / parentHeight;
-			var aspectRatioImg = imgWidth / imgHeight;
-			if (imgWidth < parentWidth) parentWidth = imgWidth;
-			if (imgHeight < parentHeight) parentHeight = imgHeight;
-			var currentWidth, currentHeight;
-			img.geometry.dispose();
-			if ((hotspot) && (hotspot.customimage)) {
-				currentWidth  = hotspot.customimagewidth;
-				currentHeight = hotspot.customimageheight;
-			img.geometry = new THREE.PlaneGeometry(currentWidth / 100.0, currentHeight / 100.0, 5, 5 );
-			img.geometry.name = 'ht_node_custom_image_imgGeometry';
-			}
-		}
-		me._ht_node_vr_1.add(me._ht_node_custom_image);
-		me._ht_node_vr_1.userData.setOpacity(1.00);
-		me.elementMouseOver['ht_node_vr_1']=false;
-		me._ht_node_preview_bg.userData.setOpacity(1.00);
-		me._ht_node_preview_title.userData.setOpacity(1.00);
-		me._ht_node_bg.userData.setOpacity(1.00);
-		me._ht_node_icon.userData.setOpacity(1.00);
-		me._ht_node_custom_image.userData.setOpacity(1.00);
-			me.ggEvent_changenode=function() {
-					me._ht_node_preview_title.userData.ggUpdateText();
-			};
-			me.__obj = me._ht_node_vr_1;
-			me.__obj.userData.hotspot = hotspot;
-			me.__obj.userData.fromSkin = true;
-	};
-	function SkinHotspotClass_ht_node_vr(parentScope,hotspot) {
-		var me=this;
-		var flag=false;
-		var hs='';
-		me.parentScope=parentScope;
-		me.hotspot=hotspot;
-		var nodeId=String(hotspot.url);
-		nodeId=(nodeId.charAt(0)=='{')?nodeId.substr(1, nodeId.length - 2):''; // }
-		me.ggUserdata=skin.player.getNodeUserdata(nodeId);
-		me.ggUserdata.nodeId=nodeId;
-		me.elementMouseDown={};
-		me.elementMouseOver={};
-		me.findElements=function(id,regex) {
-			return skin.findElements(id,regex);
-		}
-		el = new THREE.Group();
-		el.userData.setOpacityInternal = function(v) {};
-		el.name = 'ht_node_vr';
-		el.userData.x = -3.2;
-		el.userData.y = 1.6;
-		el.userData.hanchor = 0;
-		el.userData.vanchor = 0;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_vr.visible
-			let parentEl = me._ht_node_vr.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_vr.userData.opacity = v;
-			v = v * me._ht_node_vr.userData.parentOpacity;
-			me._ht_node_vr.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_vr.children.length; i++) {
-				let child = me._ht_node_vr.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_vr.userData.parentOpacity = v;
-			v = v * me._ht_node_vr.userData.opacity
-			me._ht_node_vr.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_vr.children.length; i++) {
-				let child = me._ht_node_vr.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_vr = el;
-		el.userData.ggId="ht_node_vr";
-		el.userData.ggElementNodeId=function() {
-			if (me.hotspot.url!='' && me.hotspot.url.charAt(0)=='{') { // }
-				return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
-			} else {
-				if ((this.parentNode) && (this.parentNode.userData.ggElementNodeId)) {
-					return this.parentNode.userData.ggElementNodeId();
-				} else {
-					return player.getCurrentNode();
-				}
-			}
-		}
-		me._ht_node_vr.userData.onclick=function (e) {
-			var list=me.findElements("ht_node_vr_1",true);
-			if (list.length>0) {
-				var e=list[0];
-				e.userData.visible = !e.userData.visible;
-				var flag=e.userData.visible;
-			}
-			while(list.length>0) {
-				var e=list.pop();
-				e.visible=((flag)&&((!e.material && Number(e.userData.opacity>0)) || Number(e.material.opacity)>0))?true:false;
-			}
-			player.triggerEvent('hsproxyclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
-		}
-		me._ht_node_vr.userData.ondblclick=function (e) {
-			player.triggerEvent('hsproxydblclick', {'id': me.hotspot.id, 'url': me.hotspot.url});
-		}
-		me._ht_node_vr.userData.onmouseenter=function (e) {
-			player.setActiveHotspot(me.hotspot);
-			me.elementMouseOver['ht_node_vr']=true;
-			player.triggerEvent('hsproxyover', {'id': me.hotspot.id, 'url': me.hotspot.url});
-		}
-		me._ht_node_vr.userData.onmouseleave=function (e) {
-			player.setActiveHotspot(null);
-			me.elementMouseOver['ht_node_vr']=false;
-			player.triggerEvent('hsproxyout', {'id': me.hotspot.id, 'url': me.hotspot.url});
-		}
-		me._ht_node_vr.userData.ggUpdatePosition=function (useTransition) {
-		}
-		width = 1.8;
-		height = 1.2;
-		roundedRectShape = new THREE.Shape();
-		roundedRectShape.moveTo((-width / 2.0) + 0.08, (height / 2.0));
-		roundedRectShape.lineTo((width / 2.0) - 0.08, (height / 2.0));
-		roundedRectShape.arc(0, -0.08, 0.08, Math.PI / 2.0, 2.0 * Math.PI, true);
-		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.08);
-		roundedRectShape.arc(-0.08, 0, 0.08, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		roundedRectShape.lineTo((-width / 2.0) + 0.08, (-height / 2.0));
-		roundedRectShape.arc(0, 0.08, 0.08, 3.0 * Math.PI / 2.0, Math.PI, true);
-		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.08);
-		roundedRectShape.arc(0.08, 0, 0.08, Math.PI, Math.PI / 2.0, true);
-		geometry = new THREE.ShapeGeometry(roundedRectShape);
-		geometry.name = 'ht_node_preview_bg_geometry';
-		geometry.computeBoundingBox();
-		var min = geometry.boundingBox.min;
-		var max = geometry.boundingBox.max;
-		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
-		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
-		var vertexPositions = geometry.getAttribute('position');
-		var vertexUVs = geometry.getAttribute('uv');
-		for (var i = 0; i < vertexPositions.count; i++) {
-			var v1 = vertexPositions.getX(i);
-			var	v2 = vertexPositions.getY(i);
-			vertexUVs.setX(i, (v1 + offset.x) / range.x);
-			vertexUVs.setY(i, (v2 + offset.y) / range.y);
-		}
-		geometry.uvsNeedUpdate = true;
-		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.823529, 0.823529, 0.823529).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'ht_node_preview_bg_material';
-		el = new THREE.Mesh( geometry, material );
-		el.userData.backgroundColorAlpha = 1;
-		el.userData.borderColorAlpha = 1;
-		el.userData.setOpacityInternal = function(v) {
 			me._ht_node_preview_bg0.material.opacity = v * me._ht_node_preview_bg0.userData.backgroundColorAlpha;
 			if (me._ht_node_preview_bg0.userData.ggSubElement) {
 				me._ht_node_preview_bg0.userData.ggSubElement.material.opacity = v
@@ -19624,17 +19325,17 @@ document.addEventListener('keydown', (e) => {
 			me._ht_node_preview_bg0.userData.backgroundColorAlpha = v;
 			me._ht_node_preview_bg0.userData.setOpacity(me._ht_node_preview_bg0.userData.opacity);
 		}
-		el.translateX(0);
-		el.translateY(0.66);
+		el.translateX(-0.07);
+		el.translateY(1.42);
 		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 180;
-		el.userData.height = 120;
+		el.userData.width = 630;
+		el.userData.height = 236;
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'ht_node_preview_bg';
-		el.userData.x = 0;
-		el.userData.y = 0.66;
+		el.userData.x = -0.07;
+		el.userData.y = 1.42;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
 		el.translateZ(0.010);
@@ -19675,8 +19376,8 @@ document.addEventListener('keydown', (e) => {
 				}
 			};
 		}
-		el.visible = false;
-		el.userData.visible = false;
+		el.visible = true;
+		el.userData.visible = true;
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
@@ -19684,7 +19385,7 @@ document.addEventListener('keydown', (e) => {
 		el.userData.ggId="ht_node_preview_bg";
 		me._ht_node_preview_bg0.userData.ggUpdatePosition=function (useTransition) {
 		}
-		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
+		geometry = new THREE.PlaneGeometry(6.3, 2.26, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
 		material.name = 'ht_node_preview_title_material';
@@ -19711,18 +19412,18 @@ document.addEventListener('keydown', (e) => {
 			me._ht_node_preview_title0.userData.setOpacity(me._ht_node_preview_title0.userData.opacity);
 		}
 		el.translateX(0);
-		el.translateY(0.42);
+		el.translateY(0.04);
 		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 180;
-		el.userData.height = 36;
+		el.userData.width = 630;
+		el.userData.height = 226;
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'ht_node_preview_title';
 		el.userData.x = 0;
-		el.userData.y = 0.42;
-		el.userData.hanchor = 0;
-		el.userData.vanchor = 0;
+		el.userData.y = 0.04;
+		el.userData.hanchor = 1;
+		el.userData.vanchor = 1;
 		el.translateZ(0.020);
 		el.renderOrder = 2;
 		el.rotateZ(0.00);
@@ -19772,8 +19473,8 @@ document.addEventListener('keydown', (e) => {
 		el.userData.textColor = new THREE.Color(0, 0, 0).convertSRGBToLinear();
 		el.userData.textColorAlpha = 1;
 		var canvas = document.createElement('canvas');
-		canvas.width = 360;
-		canvas.height = 72;
+		canvas.width = 1260;
+		canvas.height = 452;
 		el.userData.textCanvas = canvas;
 		el.userData.textCanvasContext = canvas.getContext('2d');
 		el.userData.ggStripTags = function(text) {
@@ -19835,10 +19536,9 @@ document.addEventListener('keydown', (e) => {
 			ctx.fillRect(0, 0, canv.width, canv.height);
 			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title0.userData.textColor.r * 255 + ', ' + me._ht_node_preview_title0.userData.textColor.g * 255 + ', ' + me._ht_node_preview_title0.userData.textColor.b * 255 + ', ' + me._ht_node_preview_title0.userData.textColorAlpha + ')';
 			ctx.textBaseline = 'top';
-			var x = (me._ht_node_preview_title0.userData.boxWidthCanv - (me._ht_node_preview_title0.userData.hasScrollbar ? 50 : 0)) / 2;
-			ctx.textAlign = 'center';
+			var x = 2 * 0;
+			ctx.textAlign = 'left';
 			var y = 2 * 7;
-			y += (canv.height - me._ht_node_preview_title0.userData.totalHeightCanv - (2 * 0)) / 2;
 			for (var i = 0; i < me._ht_node_preview_title0.userData.textLines.length; i++) {
 				ctx.fillText(me._ht_node_preview_title0.userData.textLines[i], x, y);
 				y += me._ht_node_preview_title0.userData.lineHeightCanv;
@@ -19874,7 +19574,7 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_preview_title0.userData.ggUpdateText=function(force) {
 			var params = [];
-			params.push(player._(String(player._(me.hotspot.title))));
+			params.push(player._(String(player._(me.hotspot.description))));
 			var hs = player._("%1", params);
 			if (hs!=this.ggText || force) {
 				this.ggText=me._ht_node_preview_title0.userData.ggStripTags(hs);
@@ -19898,7 +19598,7 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_title0.userData.ggUpdatePosition=function (useTransition) {
 		}
 		me._ht_node_preview_bg0.add(me._ht_node_preview_title0);
-		me._ht_node_vr.add(me._ht_node_preview_bg0);
+		me._ht_node_vr_1.add(me._ht_node_preview_bg0);
 		width = 0.32;
 		height = 0.48;
 		roundedRectShape = new THREE.Shape();
@@ -19998,8 +19698,8 @@ document.addEventListener('keydown', (e) => {
 				}
 			};
 		}
-		el.visible = true;
-		el.userData.visible = true;
+		el.visible = false;
+		el.userData.visible = false;
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
@@ -20010,8 +19710,8 @@ document.addEventListener('keydown', (e) => {
 		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
 		loader = new THREE.TextureLoader();
-		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABKElEQVR4nO3WTa6CQBBFYeMiYE2u35+FOHVw36QwndYWGp/etjlfYkwQsepgorsdAAAAAAAAAAAAAAAfJWmUNLrnsJA0SDrFY3DP81XJ8pPjZiJky1/jsY0I2fLH5BtwSp77jBDLn9O7nQQYuo6QLX9fcNo+Oae/CKXl47V7gLlzf1L8zhcXygPEsT4izC0f5zwEiONphPPPRciWLy5QClBzjebUDP4qQOFabf9tjoEvS+/aXIDkmu1HqF0+3jMbILl2uxGeLL9owKUB3vmMr5B0kHSrHawmQJw/RbhJOqyb9kMiQtVdqQ0Q7xmbW36tNQH+29754S0ggHsANwK4B3AjgHsANwK4B3AjgHsANwK4B3AjgHsAt80HAAAAAAAAAAAAAAAA/fsD3e5g+r'+
-	'A5Qy8AAAAASUVORK5CYII=');
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABI0lEQVR4nO3aWwqDQAyF4dDluBLB/S+iO+hb+jIBKVJHHeNk8n/Q55xzoBeoIgAAAAAAAAAAAACAfSoyqcj8wN1ZRSbvu78hJhV5q8hHRRbHu0u5+X5shFV5LS+XEVbl7a7/CBvlXUbYKP/MCOX9txXkthH+lLebvp9DFYGajeB5q7tg3Zb3CNh9eXNH0DDlTcvA4cqbFsHDljdXCoQvb84UGaa8OVJouPKmptiw5U1FwXHLm50Rxi5vDowwXnlTMYJ7+ZfnsdRSvwVSfwim/hpM/UPoSLHhRjhTaJgRrhQJP0KLAmFHaBk83Ah3BA4zwp1Bux/BI2C3I3gG624Ezf7nqGb/e7yEyfuAxCpM3kdkVmHyPiQFAAAAAAAAAAAAAFF8AfMbCykcOP+iAA'+
+	'AAAElFTkSuQmCC');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_icon_material';
@@ -20082,7 +19782,7 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_icon0.userData.ggUpdatePosition=function (useTransition) {
 		}
 		me._ht_node_bg0.add(me._ht_node_icon0);
-		me._ht_node_vr.add(me._ht_node_bg0);
+		me._ht_node_vr_1.add(me._ht_node_bg0);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -20200,9 +19900,9 @@ document.addEventListener('keydown', (e) => {
 			img.geometry.name = 'ht_node_custom_image_imgGeometry';
 			}
 		}
-		me._ht_node_vr.add(me._ht_node_custom_image0);
-		me._ht_node_vr.userData.setOpacity(1.00);
-		me.elementMouseOver['ht_node_vr']=false;
+		me._ht_node_vr_1.add(me._ht_node_custom_image0);
+		me._ht_node_vr_1.userData.setOpacity(1.00);
+		me.elementMouseOver['ht_node_vr_1']=false;
 		me._ht_node_preview_bg0.userData.setOpacity(1.00);
 		me._ht_node_preview_title0.userData.setOpacity(1.00);
 		me._ht_node_bg0.userData.setOpacity(1.00);
@@ -20211,7 +19911,7 @@ document.addEventListener('keydown', (e) => {
 			me.ggEvent_changenode=function() {
 					me._ht_node_preview_title0.userData.ggUpdateText();
 			};
-			me.__obj = me._ht_node_vr;
+			me.__obj = me._ht_node_vr_1;
 			me.__obj.userData.hotspot = hotspot;
 			me.__obj.userData.fromSkin = true;
 	};
@@ -20501,7 +20201,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img0_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -20524,12 +20224,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img.material) me._ht_node_preview_img.material.opacity = v;
-			me._ht_node_preview_img.visible = (v>0 && me._ht_node_preview_img.userData.visible);
+			if (me._ht_node_preview_img0.material) me._ht_node_preview_img0.material.opacity = v;
+			me._ht_node_preview_img0.visible = (v>0 && me._ht_node_preview_img0.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img.visible
-			let parentEl = me._ht_node_preview_img.parent;
+			let vis = me._ht_node_preview_img0.visible
+			let parentEl = me._ht_node_preview_img0.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -20540,22 +20240,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img.userData.opacity = v;
-			v = v * me._ht_node_preview_img.userData.parentOpacity;
-			me._ht_node_preview_img.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
-				let child = me._ht_node_preview_img.children[i];
+			me._ht_node_preview_img0.userData.opacity = v;
+			v = v * me._ht_node_preview_img0.userData.parentOpacity;
+			me._ht_node_preview_img0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
+				let child = me._ht_node_preview_img0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img.userData.opacity
-			me._ht_node_preview_img.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
-				let child = me._ht_node_preview_img.children[i];
+			me._ht_node_preview_img0.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img0.userData.opacity
+			me._ht_node_preview_img0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
+				let child = me._ht_node_preview_img0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -20566,17 +20266,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img = el;
+		me._ht_node_preview_img0 = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img.userData.ggIsActive=function() {
+		me._ht_node_preview_img0.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img0.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg1.add(me._ht_node_preview_img);
+		me._ht_node_preview_bg1.add(me._ht_node_preview_img0);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -21180,7 +20880,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['flycam_hotspot']=false;
 		me._ht_node_preview_bg1.logicBlock_visible();
 		me._ht_node_preview_bg1.userData.setOpacity(1.00);
-		me._ht_node_preview_img.userData.setOpacity(1.00);
+		me._ht_node_preview_img0.userData.setOpacity(1.00);
 		me._ht_node_preview_title1.logicBlock_visible();
 		me._ht_node_preview_title1.userData.setOpacity(1.00);
 		me._ht_node_bg1.logicBlock_visible();
@@ -21502,7 +21202,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img0_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img1_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -21525,12 +21225,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img0.material) me._ht_node_preview_img0.material.opacity = v;
-			me._ht_node_preview_img0.visible = (v>0 && me._ht_node_preview_img0.userData.visible);
+			if (me._ht_node_preview_img1.material) me._ht_node_preview_img1.material.opacity = v;
+			me._ht_node_preview_img1.visible = (v>0 && me._ht_node_preview_img1.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img0.visible
-			let parentEl = me._ht_node_preview_img0.parent;
+			let vis = me._ht_node_preview_img1.visible
+			let parentEl = me._ht_node_preview_img1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -21541,22 +21241,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img0.userData.opacity = v;
-			v = v * me._ht_node_preview_img0.userData.parentOpacity;
-			me._ht_node_preview_img0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
-				let child = me._ht_node_preview_img0.children[i];
+			me._ht_node_preview_img1.userData.opacity = v;
+			v = v * me._ht_node_preview_img1.userData.parentOpacity;
+			me._ht_node_preview_img1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
+				let child = me._ht_node_preview_img1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img0.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img0.userData.opacity
-			me._ht_node_preview_img0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
-				let child = me._ht_node_preview_img0.children[i];
+			me._ht_node_preview_img1.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img1.userData.opacity
+			me._ht_node_preview_img1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
+				let child = me._ht_node_preview_img1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -21567,17 +21267,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img0 = el;
+		me._ht_node_preview_img1 = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img0.userData.ggIsActive=function() {
+		me._ht_node_preview_img1.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img0.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img1.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg2.add(me._ht_node_preview_img0);
+		me._ht_node_preview_bg2.add(me._ht_node_preview_img1);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -22197,7 +21897,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['arrow_hotspot']=false;
 		me._ht_node_preview_bg2.logicBlock_visible();
 		me._ht_node_preview_bg2.userData.setOpacity(1.00);
-		me._ht_node_preview_img0.userData.setOpacity(1.00);
+		me._ht_node_preview_img1.userData.setOpacity(1.00);
 		me._ht_node_preview_title2.logicBlock_visible();
 		me._ht_node_preview_title2.userData.setOpacity(1.00);
 		me._ht_node_bg2.logicBlock_visible();
@@ -23660,7 +23360,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img1_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img2_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -23683,12 +23383,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img1.material) me._ht_node_preview_img1.material.opacity = v;
-			me._ht_node_preview_img1.visible = (v>0 && me._ht_node_preview_img1.userData.visible);
+			if (me._ht_node_preview_img2.material) me._ht_node_preview_img2.material.opacity = v;
+			me._ht_node_preview_img2.visible = (v>0 && me._ht_node_preview_img2.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img1.visible
-			let parentEl = me._ht_node_preview_img1.parent;
+			let vis = me._ht_node_preview_img2.visible
+			let parentEl = me._ht_node_preview_img2.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -23699,22 +23399,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img1.userData.opacity = v;
-			v = v * me._ht_node_preview_img1.userData.parentOpacity;
-			me._ht_node_preview_img1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
-				let child = me._ht_node_preview_img1.children[i];
+			me._ht_node_preview_img2.userData.opacity = v;
+			v = v * me._ht_node_preview_img2.userData.parentOpacity;
+			me._ht_node_preview_img2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img2.children.length; i++) {
+				let child = me._ht_node_preview_img2.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img1.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img1.userData.opacity
-			me._ht_node_preview_img1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
-				let child = me._ht_node_preview_img1.children[i];
+			me._ht_node_preview_img2.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img2.userData.opacity
+			me._ht_node_preview_img2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img2.children.length; i++) {
+				let child = me._ht_node_preview_img2.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -23725,17 +23425,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img1 = el;
+		me._ht_node_preview_img2 = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img1.userData.ggIsActive=function() {
+		me._ht_node_preview_img2.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img1.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img2.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg3.add(me._ht_node_preview_img1);
+		me._ht_node_preview_bg3.add(me._ht_node_preview_img2);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -24343,7 +24043,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['ht_node']=false;
 		me._ht_node_preview_bg3.logicBlock_visible();
 		me._ht_node_preview_bg3.userData.setOpacity(1.00);
-		me._ht_node_preview_img1.userData.setOpacity(1.00);
+		me._ht_node_preview_img2.userData.setOpacity(1.00);
 		me._ht_node_preview_title3.logicBlock_visible();
 		me._ht_node_preview_title3.userData.setOpacity(1.00);
 		me._ht_node_bg3.logicBlock_visible();
@@ -31074,17 +30774,17 @@ document.addEventListener('keydown', (e) => {
 			}
 			hotspotTemplates[hotspot.skinid].push(hsinst);
 		} else
-		if (hotspot.skinid=='ht_node_vr') {
-			hotspot.skinid = 'ht_node_vr';
-			hsinst = new SkinHotspotClass_ht_node_vr(me, hotspot);
+		if (hotspot.skinid=='ht_node_vr_1') {
+			hotspot.skinid = 'ht_node_vr_1';
+			hsinst = new SkinHotspotClass_ht_node_vr_1(me, hotspot);
 			if (!hotspotTemplates.hasOwnProperty(hotspot.skinid)) {
 				hotspotTemplates[hotspot.skinid] = [];
 			}
 			hotspotTemplates[hotspot.skinid].push(hsinst);
 		} else
-		if (hotspot.skinid=='ht_node_vr_1') {
-			hotspot.skinid = 'ht_node_vr_1';
-			hsinst = new SkinHotspotClass_ht_node_vr_1(me, hotspot);
+		if (hotspot.skinid=='ht_node__2_vr') {
+			hotspot.skinid = 'ht_node__2_vr';
+			hsinst = new SkinHotspotClass_ht_node_2_vr(me, hotspot);
 			if (!hotspotTemplates.hasOwnProperty(hotspot.skinid)) {
 				hotspotTemplates[hotspot.skinid] = [];
 			}
