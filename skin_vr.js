@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.9/20995
 // Filename: fat.ggsk
-// Generated 2025-12-12T02:16:25
+// Generated 2025-12-12T02:24:23
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('resp_phone', 2, false, { ignoreInState: 1  });
@@ -18184,8 +18184,8 @@ document.addEventListener('keydown', (e) => {
 		el = new THREE.Group();
 		el.userData.setOpacityInternal = function(v) {};
 		el.name = 'ht_node__2_vr';
-		el.userData.x = -3.2;
-		el.userData.y = 1.6;
+		el.userData.x = -0.77;
+		el.userData.y = -1.2;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
 		el.translateZ(0.030);
@@ -18226,8 +18226,8 @@ document.addEventListener('keydown', (e) => {
 				}
 			};
 		}
-		el.visible = false;
-		el.userData.visible = false;
+		el.visible = true;
+		el.userData.visible = true;
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
@@ -18262,8 +18262,8 @@ document.addEventListener('keydown', (e) => {
 			me._ht_node_2_vr.userData.visible=true;
 				}
 				else {
-			me._ht_node_2_vr.visible=false;
-			me._ht_node_2_vr.userData.visible=false;
+			me._ht_node_2_vr.visible=((!me._ht_node_2_vr.material && Number(me._ht_node_2_vr.userData.opacity>0)) || Number(me._ht_node_2_vr.material.opacity)>0)?true:false;
+			me._ht_node_2_vr.userData.visible=true;
 				}
 			}
 		}
@@ -18298,8 +18298,8 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_2_vr.userData.ggUpdatePosition=function (useTransition) {
 		}
-		width = 1.8;
-		height = 1.2;
+		width = 5.28;
+		height = 2.52;
 		roundedRectShape = new THREE.Shape();
 		roundedRectShape.moveTo((-width / 2.0) + 0.08, (height / 2.0));
 		roundedRectShape.lineTo((width / 2.0) - 0.08, (height / 2.0));
@@ -18347,16 +18347,16 @@ document.addEventListener('keydown', (e) => {
 			me._ht_node_preview_bg.userData.setOpacity(me._ht_node_preview_bg.userData.opacity);
 		}
 		el.translateX(0);
-		el.translateY(0.66);
+		el.translateY(1.55);
 		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 180;
-		el.userData.height = 120;
+		el.userData.width = 528;
+		el.userData.height = 252;
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'ht_node_preview_bg';
 		el.userData.x = 0;
-		el.userData.y = 0.66;
+		el.userData.y = 1.55;
 		el.userData.hanchor = 1;
 		el.userData.vanchor = 1;
 		el.translateZ(0.010);
@@ -18431,113 +18431,7 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_bg.logicBlock_visible();
 		me._ht_node_preview_bg.userData.ggUpdatePosition=function (useTransition) {
 		}
-		width = 1.72;
-		height = 1.12;
-		roundedRectShape = new THREE.Shape();
-		roundedRectShape.moveTo((-width / 2.0) + 0.05, (height / 2.0));
-		roundedRectShape.lineTo((width / 2.0) - 0.05, (height / 2.0));
-		roundedRectShape.arc(0, -0.05, 0.05, Math.PI / 2.0, 2.0 * Math.PI, true);
-		roundedRectShape.lineTo((width / 2.0), (-height / 2.0) + 0.05);
-		roundedRectShape.arc(-0.05, 0, 0.05, 2.0 * Math.PI, 3.0 * Math.PI / 2.0, true);
-		roundedRectShape.lineTo((-width / 2.0) + 0.05, (-height / 2.0));
-		roundedRectShape.arc(0, 0.05, 0.05, 3.0 * Math.PI / 2.0, Math.PI, true);
-		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.05);
-		roundedRectShape.arc(0.05, 0, 0.05, Math.PI, Math.PI / 2.0, true);
-		geometry = new THREE.ShapeGeometry(roundedRectShape);
-		geometry.name = 'ht_node_preview_img_geometry';
-		geometry.computeBoundingBox();
-		var min = geometry.boundingBox.min;
-		var max = geometry.boundingBox.max;
-		var offset = new THREE.Vector2(0 - min.x, 0 - min.y);
-		var range = new THREE.Vector2(max.x - min.x, max.y - min.y);
-		var vertexPositions = geometry.getAttribute('position');
-		var vertexUVs = geometry.getAttribute('uv');
-		for (var i = 0; i < vertexPositions.count; i++) {
-			var v1 = vertexPositions.getX(i);
-			var	v2 = vertexPositions.getY(i);
-			vertexUVs.setX(i, (v1 + offset.x) / range.x);
-			vertexUVs.setY(i, (v2 + offset.y) / range.y);
-		}
-		geometry.uvsNeedUpdate = true;
-		loader = new THREE.TextureLoader();
-		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img_' + nodeId + '.jpg');
-		texture.colorSpace = player.getVRTextureColorSpace();
-		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
-		material.name = 'ht_node_preview_img_material';
-		el = new THREE.Mesh( geometry, material );
-		el.translateX(0);
-		el.translateY(0);
-		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 172;
-		el.userData.height = 112;
-		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
-		el.userData.curScaleOffX = 0;
-		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_preview_img';
-		el.userData.x = 0;
-		el.userData.y = 0;
-		el.userData.hanchor = 1;
-		el.userData.vanchor = 1;
-		el.translateZ(0.020);
-		el.renderOrder = 2;
-		el.rotateZ(0.00);
-		el.userData.angle = 0.00;
-		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img.material) me._ht_node_preview_img.material.opacity = v;
-			me._ht_node_preview_img.visible = (v>0 && me._ht_node_preview_img.userData.visible);
-		}
-		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img.visible
-			let parentEl = me._ht_node_preview_img.parent;
-			while (vis && parentEl) {
-				if (!parentEl.visible) {
-					vis = false;
-					break;
-				}
-				parentEl = parentEl.parent;
-			}
-			return vis;
-		}
-		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img.userData.opacity = v;
-			v = v * me._ht_node_preview_img.userData.parentOpacity;
-			me._ht_node_preview_img.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
-				let child = me._ht_node_preview_img.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img.userData.opacity
-			me._ht_node_preview_img.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
-				let child = me._ht_node_preview_img.children[i];
-				if (child.userData.setParentOpacity) {
-					child.userData.setParentOpacity(v);
-				}
-			};
-		}
-		el.visible = true;
-		el.userData.visible = true;
-		el.userData.opacity = 1.00;
-		el.userData.parentOpacity = 1.0;
-		el.userData.transitions = [];
-		me._ht_node_preview_img = el;
-		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img.userData.ggIsActive=function() {
-			return player.getCurrentNode()==this.userData.ggElementNodeId();
-		}
-		el.userData.ggElementNodeId=function() {
-			return this.userData.ggNodeId;
-		}
-		me._ht_node_preview_img.userData.ggUpdatePosition=function (useTransition) {
-		}
-		me._ht_node_preview_bg.add(me._ht_node_preview_img);
-		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
+		geometry = new THREE.PlaneGeometry(5.24, 2.52, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
 		material.name = 'ht_node_preview_title_material';
@@ -18563,21 +18457,21 @@ document.addEventListener('keydown', (e) => {
 			me._ht_node_preview_title.userData.backgroundColorAlpha = v;
 			me._ht_node_preview_title.userData.setOpacity(me._ht_node_preview_title.userData.opacity);
 		}
-		el.translateX(0);
-		el.translateY(0.42);
+		el.translateX(-6.10352e-07);
+		el.translateY(0);
 		el.scale.set(1.00, 1.00, 1.0);
-		el.userData.width = 180;
-		el.userData.height = 36;
+		el.userData.width = 524;
+		el.userData.height = 252;
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
 		el.name = 'ht_node_preview_title';
-		el.userData.x = 0;
-		el.userData.y = 0.42;
+		el.userData.x = -6.10352e-07;
+		el.userData.y = 0;
 		el.userData.hanchor = 0;
 		el.userData.vanchor = 0;
-		el.translateZ(0.030);
-		el.renderOrder = 3;
+		el.translateZ(0.020);
+		el.renderOrder = 2;
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
@@ -18625,8 +18519,8 @@ document.addEventListener('keydown', (e) => {
 		el.userData.textColor = new THREE.Color(0, 0, 0).convertSRGBToLinear();
 		el.userData.textColorAlpha = 1;
 		var canvas = document.createElement('canvas');
-		canvas.width = 360;
-		canvas.height = 72;
+		canvas.width = 1048;
+		canvas.height = 504;
 		el.userData.textCanvas = canvas;
 		el.userData.textCanvasContext = canvas.getContext('2d');
 		el.userData.ggStripTags = function(text) {
@@ -18688,10 +18582,9 @@ document.addEventListener('keydown', (e) => {
 			ctx.fillRect(0, 0, canv.width, canv.height);
 			ctx.fillStyle = 'rgba(' + me._ht_node_preview_title.userData.textColor.r * 255 + ', ' + me._ht_node_preview_title.userData.textColor.g * 255 + ', ' + me._ht_node_preview_title.userData.textColor.b * 255 + ', ' + me._ht_node_preview_title.userData.textColorAlpha + ')';
 			ctx.textBaseline = 'top';
-			var x = (me._ht_node_preview_title.userData.boxWidthCanv - (me._ht_node_preview_title.userData.hasScrollbar ? 50 : 0)) / 2;
-			ctx.textAlign = 'center';
+			var x = 2 * 0;
+			ctx.textAlign = 'left';
 			var y = 2 * 7;
-			y += (canv.height - me._ht_node_preview_title.userData.totalHeightCanv - (2 * 0)) / 2;
 			for (var i = 0; i < me._ht_node_preview_title.userData.textLines.length; i++) {
 				ctx.fillText(me._ht_node_preview_title.userData.textLines[i], x, y);
 				y += me._ht_node_preview_title.userData.lineHeightCanv;
@@ -18727,7 +18620,7 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_preview_title.userData.ggUpdateText=function(force) {
 			var params = [];
-			params.push(player._(String(player._(me.hotspot.title))));
+			params.push(player._(String(player._(me.hotspot.description))));
 			var hs = player._("%1", params);
 			if (hs!=this.ggText || force) {
 				this.ggText=me._ht_node_preview_title.userData.ggStripTags(hs);
@@ -18751,7 +18644,7 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_title.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player._(me.hotspot.title) == ""))
+				((player._(me.hotspot.description) == ""))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -19144,7 +19037,6 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['ht_node_2_vr']=false;
 		me._ht_node_preview_bg.logicBlock_visible();
 		me._ht_node_preview_bg.userData.setOpacity(1.00);
-		me._ht_node_preview_img.userData.setOpacity(1.00);
 		me._ht_node_preview_title.logicBlock_visible();
 		me._ht_node_preview_title.userData.setOpacity(1.00);
 		me._ht_node_bg.logicBlock_visible();
@@ -20201,7 +20093,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img0_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -20224,12 +20116,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img0.material) me._ht_node_preview_img0.material.opacity = v;
-			me._ht_node_preview_img0.visible = (v>0 && me._ht_node_preview_img0.userData.visible);
+			if (me._ht_node_preview_img.material) me._ht_node_preview_img.material.opacity = v;
+			me._ht_node_preview_img.visible = (v>0 && me._ht_node_preview_img.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img0.visible
-			let parentEl = me._ht_node_preview_img0.parent;
+			let vis = me._ht_node_preview_img.visible
+			let parentEl = me._ht_node_preview_img.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -20240,22 +20132,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img0.userData.opacity = v;
-			v = v * me._ht_node_preview_img0.userData.parentOpacity;
-			me._ht_node_preview_img0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
-				let child = me._ht_node_preview_img0.children[i];
+			me._ht_node_preview_img.userData.opacity = v;
+			v = v * me._ht_node_preview_img.userData.parentOpacity;
+			me._ht_node_preview_img.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
+				let child = me._ht_node_preview_img.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img0.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img0.userData.opacity
-			me._ht_node_preview_img0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
-				let child = me._ht_node_preview_img0.children[i];
+			me._ht_node_preview_img.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img.userData.opacity
+			me._ht_node_preview_img.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img.children.length; i++) {
+				let child = me._ht_node_preview_img.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -20266,17 +20158,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img0 = el;
+		me._ht_node_preview_img = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img0.userData.ggIsActive=function() {
+		me._ht_node_preview_img.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img0.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg1.add(me._ht_node_preview_img0);
+		me._ht_node_preview_bg1.add(me._ht_node_preview_img);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -20880,7 +20772,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['flycam_hotspot']=false;
 		me._ht_node_preview_bg1.logicBlock_visible();
 		me._ht_node_preview_bg1.userData.setOpacity(1.00);
-		me._ht_node_preview_img0.userData.setOpacity(1.00);
+		me._ht_node_preview_img.userData.setOpacity(1.00);
 		me._ht_node_preview_title1.logicBlock_visible();
 		me._ht_node_preview_title1.userData.setOpacity(1.00);
 		me._ht_node_bg1.logicBlock_visible();
@@ -21202,7 +21094,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img1_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img0_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -21225,12 +21117,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img1.material) me._ht_node_preview_img1.material.opacity = v;
-			me._ht_node_preview_img1.visible = (v>0 && me._ht_node_preview_img1.userData.visible);
+			if (me._ht_node_preview_img0.material) me._ht_node_preview_img0.material.opacity = v;
+			me._ht_node_preview_img0.visible = (v>0 && me._ht_node_preview_img0.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img1.visible
-			let parentEl = me._ht_node_preview_img1.parent;
+			let vis = me._ht_node_preview_img0.visible
+			let parentEl = me._ht_node_preview_img0.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -21241,22 +21133,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img1.userData.opacity = v;
-			v = v * me._ht_node_preview_img1.userData.parentOpacity;
-			me._ht_node_preview_img1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
-				let child = me._ht_node_preview_img1.children[i];
+			me._ht_node_preview_img0.userData.opacity = v;
+			v = v * me._ht_node_preview_img0.userData.parentOpacity;
+			me._ht_node_preview_img0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
+				let child = me._ht_node_preview_img0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img1.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img1.userData.opacity
-			me._ht_node_preview_img1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
-				let child = me._ht_node_preview_img1.children[i];
+			me._ht_node_preview_img0.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img0.userData.opacity
+			me._ht_node_preview_img0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img0.children.length; i++) {
+				let child = me._ht_node_preview_img0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -21267,17 +21159,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img1 = el;
+		me._ht_node_preview_img0 = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img1.userData.ggIsActive=function() {
+		me._ht_node_preview_img0.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img1.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img0.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg2.add(me._ht_node_preview_img1);
+		me._ht_node_preview_bg2.add(me._ht_node_preview_img0);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -21897,7 +21789,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['arrow_hotspot']=false;
 		me._ht_node_preview_bg2.logicBlock_visible();
 		me._ht_node_preview_bg2.userData.setOpacity(1.00);
-		me._ht_node_preview_img1.userData.setOpacity(1.00);
+		me._ht_node_preview_img0.userData.setOpacity(1.00);
 		me._ht_node_preview_title2.logicBlock_visible();
 		me._ht_node_preview_title2.userData.setOpacity(1.00);
 		me._ht_node_bg2.logicBlock_visible();
@@ -23360,7 +23252,7 @@ document.addEventListener('keydown', (e) => {
 		geometry.uvsNeedUpdate = true;
 		loader = new THREE.TextureLoader();
 		el.userData.ggNodeId=nodeId;
-		texture = loader.load(basePath + 'images_vr/ht_node_preview_img2_' + nodeId + '.jpg');
+		texture = loader.load(basePath + 'images_vr/ht_node_preview_img1_' + nodeId + '.jpg');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_preview_img_material';
@@ -23383,12 +23275,12 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.setOpacityInternal = function(v) {
-			if (me._ht_node_preview_img2.material) me._ht_node_preview_img2.material.opacity = v;
-			me._ht_node_preview_img2.visible = (v>0 && me._ht_node_preview_img2.userData.visible);
+			if (me._ht_node_preview_img1.material) me._ht_node_preview_img1.material.opacity = v;
+			me._ht_node_preview_img1.visible = (v>0 && me._ht_node_preview_img1.userData.visible);
 		}
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_preview_img2.visible
-			let parentEl = me._ht_node_preview_img2.parent;
+			let vis = me._ht_node_preview_img1.visible
+			let parentEl = me._ht_node_preview_img1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -23399,22 +23291,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_preview_img2.userData.opacity = v;
-			v = v * me._ht_node_preview_img2.userData.parentOpacity;
-			me._ht_node_preview_img2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img2.children.length; i++) {
-				let child = me._ht_node_preview_img2.children[i];
+			me._ht_node_preview_img1.userData.opacity = v;
+			v = v * me._ht_node_preview_img1.userData.parentOpacity;
+			me._ht_node_preview_img1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
+				let child = me._ht_node_preview_img1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_preview_img2.userData.parentOpacity = v;
-			v = v * me._ht_node_preview_img2.userData.opacity
-			me._ht_node_preview_img2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_preview_img2.children.length; i++) {
-				let child = me._ht_node_preview_img2.children[i];
+			me._ht_node_preview_img1.userData.parentOpacity = v;
+			v = v * me._ht_node_preview_img1.userData.opacity
+			me._ht_node_preview_img1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_preview_img1.children.length; i++) {
+				let child = me._ht_node_preview_img1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -23425,17 +23317,17 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_preview_img2 = el;
+		me._ht_node_preview_img1 = el;
 		el.userData.ggId="ht_node_preview_img";
-		me._ht_node_preview_img2.userData.ggIsActive=function() {
+		me._ht_node_preview_img1.userData.ggIsActive=function() {
 			return player.getCurrentNode()==this.userData.ggElementNodeId();
 		}
 		el.userData.ggElementNodeId=function() {
 			return this.userData.ggNodeId;
 		}
-		me._ht_node_preview_img2.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_preview_img1.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_preview_bg3.add(me._ht_node_preview_img2);
+		me._ht_node_preview_bg3.add(me._ht_node_preview_img1);
 		geometry = new THREE.PlaneGeometry(1.8, 0.36, 5, 5 );
 		geometry.name = 'ht_node_preview_title_geometry';
 		material = new THREE.MeshBasicMaterial( {side : THREE.DoubleSide, transparent : true } ); 
@@ -24043,7 +23935,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['ht_node']=false;
 		me._ht_node_preview_bg3.logicBlock_visible();
 		me._ht_node_preview_bg3.userData.setOpacity(1.00);
-		me._ht_node_preview_img2.userData.setOpacity(1.00);
+		me._ht_node_preview_img1.userData.setOpacity(1.00);
 		me._ht_node_preview_title3.logicBlock_visible();
 		me._ht_node_preview_title3.userData.setOpacity(1.00);
 		me._ht_node_bg3.logicBlock_visible();

@@ -1660,34 +1660,8 @@
         </hotspot>
         <hotspot>
           <position>
-            <pan>-280.56</pan>
-            <tilt>8.79</tilt>
-            <fov>10</fov>
-          </position>
-          <next>
-            <pan>0</pan>
-            <tilt>0</tilt>
-            <fov>0</fov>
-          </next>
-          <customprops/>
-          <polygon/>
-          <id>Point04</id>
-          <linktype>node</linktype>
-          <linksubtype>unknown</linksubtype>
-          <url>{node5}</url>
-          <skinid>ht_node__2_vr</skinid>
-          <type>point</type>
-          <distance>0</distance>
-          <distanceauto>1</distanceauto>
-          <autoplace>0</autoplace>
-          <use3d>0</use3d>
-          <width>0</width>
-          <height>0</height>
-        </hotspot>
-        <hotspot>
-          <position>
-            <pan>-253.31</pan>
-            <tilt>8.3</tilt>
+            <pan>-280.25</pan>
+            <tilt>8.86</tilt>
             <fov>10</fov>
           </position>
           <next>
@@ -1704,7 +1678,7 @@ Nhà thờ không chỉ là nơi sinh hoạt tôn giáo của bà con giáo dân
           <linktype>node</linktype>
           <linksubtype>unknown</linksubtype>
           <url>{node5}</url>
-          <skinid>ht_node_vr_1</skinid>
+          <skinid>ht_node__2_vr</skinid>
           <type>point</type>
           <distance>0</distance>
           <distanceauto>1</distanceauto>
