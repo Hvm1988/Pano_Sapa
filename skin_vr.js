@@ -1,7 +1,7 @@
 // Garden Gnome Software - VR - Skin
 // Pano2VR 7.1.9/20995
 // Filename: fat.ggsk
-// Generated 2025-12-12T02:38:41
+// Generated 2025-12-12T02:46:18
 
 function pano2vrVrSkin(player,base) {
 	player.addVariable('resp_phone', 2, false, { ignoreInState: 1  });
@@ -18682,7 +18682,7 @@ document.addEventListener('keydown', (e) => {
 		roundedRectShape.lineTo((-width / 2.0), (height / 2.0) - 0.16);
 		roundedRectShape.arc(0.16, 0, 0.16, Math.PI, Math.PI / 2.0, true);
 		geometry = new THREE.ShapeGeometry(roundedRectShape);
-		geometry.name = 'ht_node_bg_geometry';
+		geometry.name = 'ht_node_bg_1_geometry';
 		geometry.computeBoundingBox();
 		var min = geometry.boundingBox.min;
 		var max = geometry.boundingBox.max;
@@ -18698,24 +18698,24 @@ document.addEventListener('keydown', (e) => {
 		}
 		geometry.uvsNeedUpdate = true;
 		material = new THREE.MeshBasicMaterial( { color: new THREE.Color(0.117647, 0.117647, 0.117647).convertSRGBToLinear(), side : THREE.DoubleSide, transparent : true } ); 
-		material.name = 'ht_node_bg_material';
+		material.name = 'ht_node_bg_1_material';
 		el = new THREE.Mesh( geometry, material );
-		el.userData.backgroundColorAlpha = 1;
+		el.userData.backgroundColorAlpha = 0;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg.material.opacity = v * me._ht_node_bg.userData.backgroundColorAlpha;
-			if (me._ht_node_bg.userData.ggSubElement) {
-				me._ht_node_bg.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_bg.userData.visible);
+			me._ht_node_bg_1.material.opacity = v * me._ht_node_bg_1.userData.backgroundColorAlpha;
+			if (me._ht_node_bg_1.userData.ggSubElement) {
+				me._ht_node_bg_1.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg_1.userData.ggSubElement.visible = (v>0 && me._ht_node_bg_1.userData.visible);
 			}
-			me._ht_node_bg.visible = (v>0 && me._ht_node_bg.userData.visible);
+			me._ht_node_bg_1.visible = (v>0 && me._ht_node_bg_1.userData.visible);
 		}
 		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg.material.color = v;
+			me._ht_node_bg_1.material.color = v;
 		}
 		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg.userData.backgroundColorAlpha = v;
-			me._ht_node_bg.userData.setOpacity(me._ht_node_bg.userData.opacity);
+			me._ht_node_bg_1.userData.backgroundColorAlpha = v;
+			me._ht_node_bg_1.userData.setOpacity(me._ht_node_bg_1.userData.opacity);
 		}
 		el.translateX(0);
 		el.translateY(0);
@@ -18725,7 +18725,7 @@ document.addEventListener('keydown', (e) => {
 		el.userData.scale = {x: 1.00, y: 1.00, z: 1.0};
 		el.userData.curScaleOffX = 0;
 		el.userData.curScaleOffY = 0;
-		el.name = 'ht_node_bg';
+		el.name = 'ht_node_bg_1';
 		el.userData.x = 0;
 		el.userData.y = 0;
 		el.userData.hanchor = 1;
@@ -18735,8 +18735,8 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg.visible
-			let parentEl = me._ht_node_bg.parent;
+			let vis = me._ht_node_bg_1.visible
+			let parentEl = me._ht_node_bg_1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -18747,22 +18747,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_bg.userData.opacity = v;
-			v = v * me._ht_node_bg.userData.parentOpacity;
-			me._ht_node_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
-				let child = me._ht_node_bg.children[i];
+			me._ht_node_bg_1.userData.opacity = v;
+			v = v * me._ht_node_bg_1.userData.parentOpacity;
+			me._ht_node_bg_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg_1.children.length; i++) {
+				let child = me._ht_node_bg_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg.userData.parentOpacity = v;
-			v = v * me._ht_node_bg.userData.opacity
-			me._ht_node_bg.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
-				let child = me._ht_node_bg.children[i];
+			me._ht_node_bg_1.userData.parentOpacity = v;
+			v = v * me._ht_node_bg_1.userData.opacity
+			me._ht_node_bg_1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg_1.children.length; i++) {
+				let child = me._ht_node_bg_1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -18773,9 +18773,9 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_bg = el;
-		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg.logicBlock_visible = function() {
+		me._ht_node_bg_1 = el;
+		el.userData.ggId="ht_node_bg_1";
+		me._ht_node_bg_1.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((me.hotspot.customimage != ""))
@@ -18786,26 +18786,26 @@ document.addEventListener('keydown', (e) => {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._ht_node_bg.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._ht_node_bg.ggCurrentLogicStateVisible = newLogicStateVisible;
-				if (me._ht_node_bg.ggCurrentLogicStateVisible == 0) {
-			me._ht_node_bg.visible=false;
-			me._ht_node_bg.userData.visible=false;
+			if (me._ht_node_bg_1.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_bg_1.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_bg_1.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_bg_1.visible=false;
+			me._ht_node_bg_1.userData.visible=false;
 				}
 				else {
-			me._ht_node_bg.visible=((!me._ht_node_bg.material && Number(me._ht_node_bg.userData.opacity>0)) || Number(me._ht_node_bg.material.opacity)>0)?true:false;
-			me._ht_node_bg.userData.visible=true;
+			me._ht_node_bg_1.visible=((!me._ht_node_bg_1.material && Number(me._ht_node_bg_1.userData.opacity>0)) || Number(me._ht_node_bg_1.material.opacity)>0)?true:false;
+			me._ht_node_bg_1.userData.visible=true;
 				}
 			}
 		}
-		me._ht_node_bg.logicBlock_visible();
-		me._ht_node_bg.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_bg_1.logicBlock_visible();
+		me._ht_node_bg_1.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
 		loader = new THREE.TextureLoader();
-		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABKElEQVR4nO3WTa6CQBBFYeMiYE2u35+FOHVw36QwndYWGp/etjlfYkwQsepgorsdAAAAAAAAAAAAAAAfJWmUNLrnsJA0SDrFY3DP81XJ8pPjZiJky1/jsY0I2fLH5BtwSp77jBDLn9O7nQQYuo6QLX9fcNo+Oae/CKXl47V7gLlzf1L8zhcXygPEsT4izC0f5zwEiONphPPPRciWLy5QClBzjebUDP4qQOFabf9tjoEvS+/aXIDkmu1HqF0+3jMbILl2uxGeLL9owKUB3vmMr5B0kHSrHawmQJw/RbhJOqyb9kMiQtVdqQ0Q7xmbW36tNQH+29754S0ggHsANwK4B3AjgHsANwK4B3AjgHsANwK4B3AjgHsAt80HAAAAAAAAAAAAAAAA/fsD3e5g+r'+
-	'A5Qy8AAAAASUVORK5CYII=');
+		texture = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABzUlEQVR4nO3ZMVICMRiG4TeAN4DRViobGys9h41j6TEYB3EcZ7yGjRVeQE+h9to6w3ICgVhQmqxAdgmbfE8Zws7/f5PNZgFEREREREREREREMmL+n/J9DK1LMH0w7fpLqoKdg/2ExRMcfJTNLAnAtqEYAgOgU22BWzMD7qF7B2bumtDyf7cYAEOa2zwsa7+B4to3wbMCiiOw78BePXVt3QzmJ67bwbMC7AXpNA/QWe5jf/kCOKyzmjhM3zXqCcA0+b73cD/BSjbBPCiA2AXEln0AFWx2vRWO03Wa2JBv+1ZA5Ka2J/tbQAHELiC2CjbBYhx+jRBBe2AVAdjz8GvEk/1TQOeAqspoKgUQu4DYsg/AtwmusbHpHJDkOSAbO3oOKMbbWlnZrwAF4BnP5l'+
+	'0g+xWwo78H2NPqr+mmc0DsAmJTAJ5xPQUS5HxryigAO3WNZhTA4tU1mkkA9gX2n12f5BDAG7SufB96DkLGhP7SEtkC+AIeofsA5sc3MfQkeAu9UeA1ogq5BRrfPGweQBLNw2YBJNM8rB9AUs3Deu8CyTUPq6+AJJuH1QJItvkSxXj5v/tkFLuSSIpxxs0DTM9iVyAiIiIiIiIiIiIiNfgFJDdNgZ9e5IEAAAAASUVORK5CYII=');
 		texture.colorSpace = player.getVRTextureColorSpace();
 		material = new THREE.MeshBasicMaterial( {map: texture, side: THREE.DoubleSide, transparent: true} );
 		material.name = 'ht_node_icon_material';
@@ -18872,8 +18872,8 @@ document.addEventListener('keydown', (e) => {
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
 		me._ht_node_icon = el;
-		textureOver = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABQ0lEQVR4nO3US27CQBBFUZyNRGJPsSFhxP5XEAg3k0JyEtu4I6Py5x7JE7uarvcG7HaSJEmSJEmSJEmSpOcCGuCUvUcK4AB8xbOtEoBjBL/bTgkd4bdTwkD49ZcAvD8Iv94SCsKvr4Se8H3/AesqAfjoCXbsKKBZVQlD4eP7D/FuHSUMhD+0Zv4UEO+XXcKY8DHXWUB8a4Dr4koATj3hm47Z3gLi+7JK6Al/7Qof84MFxMwyShgIXw+ceVhAzNWzLgHYA5eS8HFuVAEx21XCBdhPm+afgDNwa4V/G3FmdAEx3y7hBpyn2X4iUcLnmPAxX1RAnKnjjnmFvwNeC2aLCyi9Y4xqyh8r8Tt0VVUpu7xkXDonFpC9QDYLyF4gmwVkL5DNArIXyGYB2Qtks4'+
-	'DsBbJZQPYCkiRJkiRJkiRJkiRJz/YNetqxr5cWMbcAAAAASUVORK5CYII=');
+		textureOver = loader.load('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABgCAYAAACtxXToAAABaklEQVR4nO3aMU7DQABE0VnCSdLTIFFwlZQcBJbLUMEF4A5IiBo6Sk4QYCiSAqE1iRH2kPi/0o7R7A+mQgIAAAAAAACACSmbPmD7SNJC0lzSbPBFf+Nd0rOkq1LK469+gu2Z7UvbS++upe1qu/8Xt35wX1x0nbP5Cnj1a38v6bB3uf/pTdJx63U46Hhgof05vLQ6y6J1oyvAfLgtMc0zdQXYlb/2fTTP1BVgMgiQHpBGgPSANAKkB6QRID0gjQDpAWkESA9II0B6QBoB0gPSCJAekEaA9IA0AqQHpBEgPSCNAOkBaQRID0gjQHrAiNy6OKUAr62LUwpw17o4lQC3pZSb1o0pBHiQdNZ1c18DfEh6knQu6aSU8tLradvXW/4DYh1gfN6WAWp652C2CF'+
+	'DTGwe1IUBN7xvcDwFqetsoOgLU9K7RNALU9KZRfQtQ03tG9yVATW+JWAeo6R0xtk/TGwAAAAAAAAAAA/gEjsOvkfcKRVAAAAAASUVORK5CYII=');
 		textureOver.colorSpace = player.getVRTextureColorSpace();
 		el.userData.materialOver = new THREE.MeshBasicMaterial( {map: textureOver, side: THREE.DoubleSide, transparent: true} );
 		el.userData.materialOver.name = 'ht_node_icon_materialOver';
@@ -18888,8 +18888,8 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_icon.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_bg.add(me._ht_node_icon);
-		me._ht_node_2_vr.add(me._ht_node_bg);
+		me._ht_node_bg_1.add(me._ht_node_icon);
+		me._ht_node_2_vr.add(me._ht_node_bg_1);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -19039,8 +19039,8 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_bg.userData.setOpacity(1.00);
 		me._ht_node_preview_title.logicBlock_visible();
 		me._ht_node_preview_title.userData.setOpacity(1.00);
-		me._ht_node_bg.logicBlock_visible();
-		me._ht_node_bg.userData.setOpacity(1.00);
+		me._ht_node_bg_1.logicBlock_visible();
+		me._ht_node_bg_1.userData.setOpacity(1.00);
 		me._ht_node_icon.userData.setOpacity(1.00);
 		me.elementMouseOver['ht_node_icon']=false;
 		me._ht_node_custom_image.logicBlock_visible();
@@ -19048,7 +19048,7 @@ document.addEventListener('keydown', (e) => {
 			me.ggEvent_activehotspotchanged=function() {
 				me._ht_node_preview_bg.logicBlock_visible();
 				me._ht_node_preview_title.logicBlock_visible();
-				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_bg_1.logicBlock_visible();
 				me._ht_node_custom_image.logicBlock_visible();
 			};
 			me.ggEvent_changenode=function() {
@@ -19056,14 +19056,14 @@ document.addEventListener('keydown', (e) => {
 				me._ht_node_preview_bg.logicBlock_visible();
 					me._ht_node_preview_title.userData.ggUpdateText();
 				me._ht_node_preview_title.logicBlock_visible();
-				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_bg_1.logicBlock_visible();
 				me._ht_node_custom_image.logicBlock_visible();
 			};
 			me.ggEvent_configloaded=function() {
 				me._ht_node_2_vr.logicBlock_visible();
 				me._ht_node_preview_bg.logicBlock_visible();
 				me._ht_node_preview_title.logicBlock_visible();
-				me._ht_node_bg.logicBlock_visible();
+				me._ht_node_bg_1.logicBlock_visible();
 				me._ht_node_custom_image.logicBlock_visible();
 			};
 			me.ggEvent_varchanged_vis_skin=function() {
@@ -19525,19 +19525,19 @@ document.addEventListener('keydown', (e) => {
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg0.material.opacity = v * me._ht_node_bg0.userData.backgroundColorAlpha;
-			if (me._ht_node_bg0.userData.ggSubElement) {
-				me._ht_node_bg0.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg0.userData.ggSubElement.visible = (v>0 && me._ht_node_bg0.userData.visible);
+			me._ht_node_bg.material.opacity = v * me._ht_node_bg.userData.backgroundColorAlpha;
+			if (me._ht_node_bg.userData.ggSubElement) {
+				me._ht_node_bg.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg.userData.ggSubElement.visible = (v>0 && me._ht_node_bg.userData.visible);
 			}
-			me._ht_node_bg0.visible = (v>0 && me._ht_node_bg0.userData.visible);
+			me._ht_node_bg.visible = (v>0 && me._ht_node_bg.userData.visible);
 		}
 		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg0.material.color = v;
+			me._ht_node_bg.material.color = v;
 		}
 		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg0.userData.backgroundColorAlpha = v;
-			me._ht_node_bg0.userData.setOpacity(me._ht_node_bg0.userData.opacity);
+			me._ht_node_bg.userData.backgroundColorAlpha = v;
+			me._ht_node_bg.userData.setOpacity(me._ht_node_bg.userData.opacity);
 		}
 		el.translateX(0);
 		el.translateY(0);
@@ -19557,8 +19557,8 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg0.visible
-			let parentEl = me._ht_node_bg0.parent;
+			let vis = me._ht_node_bg.visible
+			let parentEl = me._ht_node_bg.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -19569,22 +19569,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_bg0.userData.opacity = v;
-			v = v * me._ht_node_bg0.userData.parentOpacity;
-			me._ht_node_bg0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg0.children.length; i++) {
-				let child = me._ht_node_bg0.children[i];
+			me._ht_node_bg.userData.opacity = v;
+			v = v * me._ht_node_bg.userData.parentOpacity;
+			me._ht_node_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
+				let child = me._ht_node_bg.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg0.userData.parentOpacity = v;
-			v = v * me._ht_node_bg0.userData.opacity
-			me._ht_node_bg0.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg0.children.length; i++) {
-				let child = me._ht_node_bg0.children[i];
+			me._ht_node_bg.userData.parentOpacity = v;
+			v = v * me._ht_node_bg.userData.opacity
+			me._ht_node_bg.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg.children.length; i++) {
+				let child = me._ht_node_bg.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -19595,9 +19595,9 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_bg0 = el;
+		me._ht_node_bg = el;
 		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg0.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_bg.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
@@ -19673,8 +19673,8 @@ document.addEventListener('keydown', (e) => {
 		el.userData.ggId="ht_node_icon";
 		me._ht_node_icon0.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_bg0.add(me._ht_node_icon0);
-		me._ht_node_vr_1.add(me._ht_node_bg0);
+		me._ht_node_bg.add(me._ht_node_icon0);
+		me._ht_node_vr_1.add(me._ht_node_bg);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -19797,7 +19797,7 @@ document.addEventListener('keydown', (e) => {
 		me.elementMouseOver['ht_node_vr_1']=false;
 		me._ht_node_preview_bg0.userData.setOpacity(1.00);
 		me._ht_node_preview_title0.userData.setOpacity(1.00);
-		me._ht_node_bg0.userData.setOpacity(1.00);
+		me._ht_node_bg.userData.setOpacity(1.00);
 		me._ht_node_icon0.userData.setOpacity(1.00);
 		me._ht_node_custom_image0.userData.setOpacity(1.00);
 			me.ggEvent_changenode=function() {
@@ -20442,19 +20442,19 @@ document.addEventListener('keydown', (e) => {
 		el.userData.backgroundColorAlpha = 0;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg1.material.opacity = v * me._ht_node_bg1.userData.backgroundColorAlpha;
-			if (me._ht_node_bg1.userData.ggSubElement) {
-				me._ht_node_bg1.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg1.userData.ggSubElement.visible = (v>0 && me._ht_node_bg1.userData.visible);
+			me._ht_node_bg0.material.opacity = v * me._ht_node_bg0.userData.backgroundColorAlpha;
+			if (me._ht_node_bg0.userData.ggSubElement) {
+				me._ht_node_bg0.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg0.userData.ggSubElement.visible = (v>0 && me._ht_node_bg0.userData.visible);
 			}
-			me._ht_node_bg1.visible = (v>0 && me._ht_node_bg1.userData.visible);
+			me._ht_node_bg0.visible = (v>0 && me._ht_node_bg0.userData.visible);
 		}
 		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg1.material.color = v;
+			me._ht_node_bg0.material.color = v;
 		}
 		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg1.userData.backgroundColorAlpha = v;
-			me._ht_node_bg1.userData.setOpacity(me._ht_node_bg1.userData.opacity);
+			me._ht_node_bg0.userData.backgroundColorAlpha = v;
+			me._ht_node_bg0.userData.setOpacity(me._ht_node_bg0.userData.opacity);
 		}
 		el.translateX(0);
 		el.translateY(0);
@@ -20474,8 +20474,8 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg1.visible
-			let parentEl = me._ht_node_bg1.parent;
+			let vis = me._ht_node_bg0.visible
+			let parentEl = me._ht_node_bg0.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -20486,22 +20486,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_bg1.userData.opacity = v;
-			v = v * me._ht_node_bg1.userData.parentOpacity;
-			me._ht_node_bg1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg1.children.length; i++) {
-				let child = me._ht_node_bg1.children[i];
+			me._ht_node_bg0.userData.opacity = v;
+			v = v * me._ht_node_bg0.userData.parentOpacity;
+			me._ht_node_bg0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg0.children.length; i++) {
+				let child = me._ht_node_bg0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg1.userData.parentOpacity = v;
-			v = v * me._ht_node_bg1.userData.opacity
-			me._ht_node_bg1.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg1.children.length; i++) {
-				let child = me._ht_node_bg1.children[i];
+			me._ht_node_bg0.userData.parentOpacity = v;
+			v = v * me._ht_node_bg0.userData.opacity
+			me._ht_node_bg0.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg0.children.length; i++) {
+				let child = me._ht_node_bg0.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -20512,9 +20512,9 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_bg1 = el;
+		me._ht_node_bg0 = el;
 		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg1.logicBlock_visible = function() {
+		me._ht_node_bg0.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((me.hotspot.customimage != ""))
@@ -20525,20 +20525,20 @@ document.addEventListener('keydown', (e) => {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._ht_node_bg1.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._ht_node_bg1.ggCurrentLogicStateVisible = newLogicStateVisible;
-				if (me._ht_node_bg1.ggCurrentLogicStateVisible == 0) {
-			me._ht_node_bg1.visible=false;
-			me._ht_node_bg1.userData.visible=false;
+			if (me._ht_node_bg0.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_bg0.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_bg0.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_bg0.visible=false;
+			me._ht_node_bg0.userData.visible=false;
 				}
 				else {
-			me._ht_node_bg1.visible=((!me._ht_node_bg1.material && Number(me._ht_node_bg1.userData.opacity>0)) || Number(me._ht_node_bg1.material.opacity)>0)?true:false;
-			me._ht_node_bg1.userData.visible=true;
+			me._ht_node_bg0.visible=((!me._ht_node_bg0.material && Number(me._ht_node_bg0.userData.opacity>0)) || Number(me._ht_node_bg0.material.opacity)>0)?true:false;
+			me._ht_node_bg0.userData.visible=true;
 				}
 			}
 		}
-		me._ht_node_bg1.logicBlock_visible();
-		me._ht_node_bg1.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_bg0.logicBlock_visible();
+		me._ht_node_bg0.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(1.5, 1.5, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
@@ -20623,8 +20623,8 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_icon1.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_bg1.add(me._ht_node_icon1);
-		me._flycam_hotspot.add(me._ht_node_bg1);
+		me._ht_node_bg0.add(me._ht_node_icon1);
+		me._flycam_hotspot.add(me._ht_node_bg0);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -20775,15 +20775,15 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_img.userData.setOpacity(1.00);
 		me._ht_node_preview_title1.logicBlock_visible();
 		me._ht_node_preview_title1.userData.setOpacity(1.00);
-		me._ht_node_bg1.logicBlock_visible();
-		me._ht_node_bg1.userData.setOpacity(1.00);
+		me._ht_node_bg0.logicBlock_visible();
+		me._ht_node_bg0.userData.setOpacity(1.00);
 		me._ht_node_icon1.userData.setOpacity(1.00);
 		me._ht_node_custom_image1.logicBlock_visible();
 		me._ht_node_custom_image1.userData.setOpacity(1.00);
 			me.ggEvent_activehotspotchanged=function() {
 				me._ht_node_preview_bg1.logicBlock_visible();
 				me._ht_node_preview_title1.logicBlock_visible();
-				me._ht_node_bg1.logicBlock_visible();
+				me._ht_node_bg0.logicBlock_visible();
 				me._ht_node_custom_image1.logicBlock_visible();
 			};
 			me.ggEvent_changenode=function() {
@@ -20791,14 +20791,14 @@ document.addEventListener('keydown', (e) => {
 				me._ht_node_preview_bg1.logicBlock_visible();
 					me._ht_node_preview_title1.userData.ggUpdateText();
 				me._ht_node_preview_title1.logicBlock_visible();
-				me._ht_node_bg1.logicBlock_visible();
+				me._ht_node_bg0.logicBlock_visible();
 				me._ht_node_custom_image1.logicBlock_visible();
 			};
 			me.ggEvent_configloaded=function() {
 				me._flycam_hotspot.logicBlock_visible();
 				me._ht_node_preview_bg1.logicBlock_visible();
 				me._ht_node_preview_title1.logicBlock_visible();
-				me._ht_node_bg1.logicBlock_visible();
+				me._ht_node_bg0.logicBlock_visible();
 				me._ht_node_custom_image1.logicBlock_visible();
 			};
 			me.ggEvent_varchanged_vis_skin=function() {
@@ -21443,19 +21443,19 @@ document.addEventListener('keydown', (e) => {
 		el.userData.backgroundColorAlpha = 0;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg2.material.opacity = v * me._ht_node_bg2.userData.backgroundColorAlpha;
-			if (me._ht_node_bg2.userData.ggSubElement) {
-				me._ht_node_bg2.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg2.userData.ggSubElement.visible = (v>0 && me._ht_node_bg2.userData.visible);
+			me._ht_node_bg1.material.opacity = v * me._ht_node_bg1.userData.backgroundColorAlpha;
+			if (me._ht_node_bg1.userData.ggSubElement) {
+				me._ht_node_bg1.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg1.userData.ggSubElement.visible = (v>0 && me._ht_node_bg1.userData.visible);
 			}
-			me._ht_node_bg2.visible = (v>0 && me._ht_node_bg2.userData.visible);
+			me._ht_node_bg1.visible = (v>0 && me._ht_node_bg1.userData.visible);
 		}
 		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg2.material.color = v;
+			me._ht_node_bg1.material.color = v;
 		}
 		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg2.userData.backgroundColorAlpha = v;
-			me._ht_node_bg2.userData.setOpacity(me._ht_node_bg2.userData.opacity);
+			me._ht_node_bg1.userData.backgroundColorAlpha = v;
+			me._ht_node_bg1.userData.setOpacity(me._ht_node_bg1.userData.opacity);
 		}
 		el.translateX(0);
 		el.translateY(0);
@@ -21475,8 +21475,8 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg2.visible
-			let parentEl = me._ht_node_bg2.parent;
+			let vis = me._ht_node_bg1.visible
+			let parentEl = me._ht_node_bg1.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -21487,22 +21487,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_bg2.userData.opacity = v;
-			v = v * me._ht_node_bg2.userData.parentOpacity;
-			me._ht_node_bg2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg2.children.length; i++) {
-				let child = me._ht_node_bg2.children[i];
+			me._ht_node_bg1.userData.opacity = v;
+			v = v * me._ht_node_bg1.userData.parentOpacity;
+			me._ht_node_bg1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg1.children.length; i++) {
+				let child = me._ht_node_bg1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg2.userData.parentOpacity = v;
-			v = v * me._ht_node_bg2.userData.opacity
-			me._ht_node_bg2.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg2.children.length; i++) {
-				let child = me._ht_node_bg2.children[i];
+			me._ht_node_bg1.userData.parentOpacity = v;
+			v = v * me._ht_node_bg1.userData.opacity
+			me._ht_node_bg1.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg1.children.length; i++) {
+				let child = me._ht_node_bg1.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -21513,9 +21513,9 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_bg2 = el;
+		me._ht_node_bg1 = el;
 		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg2.logicBlock_visible = function() {
+		me._ht_node_bg1.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((me.hotspot.customimage != ""))
@@ -21526,20 +21526,20 @@ document.addEventListener('keydown', (e) => {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._ht_node_bg2.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._ht_node_bg2.ggCurrentLogicStateVisible = newLogicStateVisible;
-				if (me._ht_node_bg2.ggCurrentLogicStateVisible == 0) {
-			me._ht_node_bg2.visible=false;
-			me._ht_node_bg2.userData.visible=false;
+			if (me._ht_node_bg1.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_bg1.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_bg1.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_bg1.visible=false;
+			me._ht_node_bg1.userData.visible=false;
 				}
 				else {
-			me._ht_node_bg2.visible=((!me._ht_node_bg2.material && Number(me._ht_node_bg2.userData.opacity>0)) || Number(me._ht_node_bg2.material.opacity)>0)?true:false;
-			me._ht_node_bg2.userData.visible=true;
+			me._ht_node_bg1.visible=((!me._ht_node_bg1.material && Number(me._ht_node_bg1.userData.opacity>0)) || Number(me._ht_node_bg1.material.opacity)>0)?true:false;
+			me._ht_node_bg1.userData.visible=true;
 				}
 			}
 		}
-		me._ht_node_bg2.logicBlock_visible();
-		me._ht_node_bg2.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_bg1.logicBlock_visible();
+		me._ht_node_bg1.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(1, 1, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
@@ -21640,8 +21640,8 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_icon2.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_bg2.add(me._ht_node_icon2);
-		me._arrow_hotspot.add(me._ht_node_bg2);
+		me._ht_node_bg1.add(me._ht_node_icon2);
+		me._arrow_hotspot.add(me._ht_node_bg1);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -21792,15 +21792,15 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_img0.userData.setOpacity(1.00);
 		me._ht_node_preview_title2.logicBlock_visible();
 		me._ht_node_preview_title2.userData.setOpacity(1.00);
-		me._ht_node_bg2.logicBlock_visible();
-		me._ht_node_bg2.userData.setOpacity(1.00);
+		me._ht_node_bg1.logicBlock_visible();
+		me._ht_node_bg1.userData.setOpacity(1.00);
 		me._ht_node_icon2.userData.setOpacity(1.00);
 		me._ht_node_custom_image2.logicBlock_visible();
 		me._ht_node_custom_image2.userData.setOpacity(1.00);
 			me.ggEvent_activehotspotchanged=function() {
 				me._ht_node_preview_bg2.logicBlock_visible();
 				me._ht_node_preview_title2.logicBlock_visible();
-				me._ht_node_bg2.logicBlock_visible();
+				me._ht_node_bg1.logicBlock_visible();
 				me._ht_node_custom_image2.logicBlock_visible();
 			};
 			me.ggEvent_changenode=function() {
@@ -21808,14 +21808,14 @@ document.addEventListener('keydown', (e) => {
 				me._ht_node_preview_bg2.logicBlock_visible();
 					me._ht_node_preview_title2.userData.ggUpdateText();
 				me._ht_node_preview_title2.logicBlock_visible();
-				me._ht_node_bg2.logicBlock_visible();
+				me._ht_node_bg1.logicBlock_visible();
 				me._ht_node_custom_image2.logicBlock_visible();
 			};
 			me.ggEvent_configloaded=function() {
 				me._arrow_hotspot.logicBlock_visible();
 				me._ht_node_preview_bg2.logicBlock_visible();
 				me._ht_node_preview_title2.logicBlock_visible();
-				me._ht_node_bg2.logicBlock_visible();
+				me._ht_node_bg1.logicBlock_visible();
 				me._ht_node_custom_image2.logicBlock_visible();
 			};
 			me.ggEvent_varchanged_vis_skin=function() {
@@ -23601,19 +23601,19 @@ document.addEventListener('keydown', (e) => {
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
 		el.userData.setOpacityInternal = function(v) {
-			me._ht_node_bg3.material.opacity = v * me._ht_node_bg3.userData.backgroundColorAlpha;
-			if (me._ht_node_bg3.userData.ggSubElement) {
-				me._ht_node_bg3.userData.ggSubElement.material.opacity = v
-				me._ht_node_bg3.userData.ggSubElement.visible = (v>0 && me._ht_node_bg3.userData.visible);
+			me._ht_node_bg2.material.opacity = v * me._ht_node_bg2.userData.backgroundColorAlpha;
+			if (me._ht_node_bg2.userData.ggSubElement) {
+				me._ht_node_bg2.userData.ggSubElement.material.opacity = v
+				me._ht_node_bg2.userData.ggSubElement.visible = (v>0 && me._ht_node_bg2.userData.visible);
 			}
-			me._ht_node_bg3.visible = (v>0 && me._ht_node_bg3.userData.visible);
+			me._ht_node_bg2.visible = (v>0 && me._ht_node_bg2.userData.visible);
 		}
 		el.userData.setBackgroundColor = function(v) {
-			me._ht_node_bg3.material.color = v;
+			me._ht_node_bg2.material.color = v;
 		}
 		el.userData.setBackgroundColorAlpha = function(v) {
-			me._ht_node_bg3.userData.backgroundColorAlpha = v;
-			me._ht_node_bg3.userData.setOpacity(me._ht_node_bg3.userData.opacity);
+			me._ht_node_bg2.userData.backgroundColorAlpha = v;
+			me._ht_node_bg2.userData.setOpacity(me._ht_node_bg2.userData.opacity);
 		}
 		el.translateX(0);
 		el.translateY(0);
@@ -23633,8 +23633,8 @@ document.addEventListener('keydown', (e) => {
 		el.rotateZ(0.00);
 		el.userData.angle = 0.00;
 		el.userData.isVisible = function() {
-			let vis = me._ht_node_bg3.visible
-			let parentEl = me._ht_node_bg3.parent;
+			let vis = me._ht_node_bg2.visible
+			let parentEl = me._ht_node_bg2.parent;
 			while (vis && parentEl) {
 				if (!parentEl.visible) {
 					vis = false;
@@ -23645,22 +23645,22 @@ document.addEventListener('keydown', (e) => {
 			return vis;
 		}
 		el.userData.setOpacity = function(v) {
-			me._ht_node_bg3.userData.opacity = v;
-			v = v * me._ht_node_bg3.userData.parentOpacity;
-			me._ht_node_bg3.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg3.children.length; i++) {
-				let child = me._ht_node_bg3.children[i];
+			me._ht_node_bg2.userData.opacity = v;
+			v = v * me._ht_node_bg2.userData.parentOpacity;
+			me._ht_node_bg2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg2.children.length; i++) {
+				let child = me._ht_node_bg2.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
 			};
 		}
 		el.userData.setParentOpacity = function(v) {
-			me._ht_node_bg3.userData.parentOpacity = v;
-			v = v * me._ht_node_bg3.userData.opacity
-			me._ht_node_bg3.userData.setOpacityInternal(v);
-			for (let i = 0; i < me._ht_node_bg3.children.length; i++) {
-				let child = me._ht_node_bg3.children[i];
+			me._ht_node_bg2.userData.parentOpacity = v;
+			v = v * me._ht_node_bg2.userData.opacity
+			me._ht_node_bg2.userData.setOpacityInternal(v);
+			for (let i = 0; i < me._ht_node_bg2.children.length; i++) {
+				let child = me._ht_node_bg2.children[i];
 				if (child.userData.setParentOpacity) {
 					child.userData.setParentOpacity(v);
 				}
@@ -23671,9 +23671,9 @@ document.addEventListener('keydown', (e) => {
 		el.userData.opacity = 1.00;
 		el.userData.parentOpacity = 1.0;
 		el.userData.transitions = [];
-		me._ht_node_bg3 = el;
+		me._ht_node_bg2 = el;
 		el.userData.ggId="ht_node_bg";
-		me._ht_node_bg3.logicBlock_visible = function() {
+		me._ht_node_bg2.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((me.hotspot.customimage != ""))
@@ -23684,20 +23684,20 @@ document.addEventListener('keydown', (e) => {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._ht_node_bg3.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._ht_node_bg3.ggCurrentLogicStateVisible = newLogicStateVisible;
-				if (me._ht_node_bg3.ggCurrentLogicStateVisible == 0) {
-			me._ht_node_bg3.visible=false;
-			me._ht_node_bg3.userData.visible=false;
+			if (me._ht_node_bg2.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_node_bg2.ggCurrentLogicStateVisible = newLogicStateVisible;
+				if (me._ht_node_bg2.ggCurrentLogicStateVisible == 0) {
+			me._ht_node_bg2.visible=false;
+			me._ht_node_bg2.userData.visible=false;
 				}
 				else {
-			me._ht_node_bg3.visible=((!me._ht_node_bg3.material && Number(me._ht_node_bg3.userData.opacity>0)) || Number(me._ht_node_bg3.material.opacity)>0)?true:false;
-			me._ht_node_bg3.userData.visible=true;
+			me._ht_node_bg2.visible=((!me._ht_node_bg2.material && Number(me._ht_node_bg2.userData.opacity>0)) || Number(me._ht_node_bg2.material.opacity)>0)?true:false;
+			me._ht_node_bg2.userData.visible=true;
 				}
 			}
 		}
-		me._ht_node_bg3.logicBlock_visible();
-		me._ht_node_bg3.userData.ggUpdatePosition=function (useTransition) {
+		me._ht_node_bg2.logicBlock_visible();
+		me._ht_node_bg2.userData.ggUpdatePosition=function (useTransition) {
 		}
 		geometry = new THREE.PlaneGeometry(0.32, 0.48, 5, 5 );
 		geometry.name = 'ht_node_icon_geometry';
@@ -23786,8 +23786,8 @@ document.addEventListener('keydown', (e) => {
 		}
 		me._ht_node_icon3.userData.ggUpdatePosition=function (useTransition) {
 		}
-		me._ht_node_bg3.add(me._ht_node_icon3);
-		me._ht_node.add(me._ht_node_bg3);
+		me._ht_node_bg2.add(me._ht_node_icon3);
+		me._ht_node.add(me._ht_node_bg2);
 		el = new THREE.Group();
 		el.userData.backgroundColorAlpha = 1;
 		el.userData.borderColorAlpha = 1;
@@ -23938,8 +23938,8 @@ document.addEventListener('keydown', (e) => {
 		me._ht_node_preview_img1.userData.setOpacity(1.00);
 		me._ht_node_preview_title3.logicBlock_visible();
 		me._ht_node_preview_title3.userData.setOpacity(1.00);
-		me._ht_node_bg3.logicBlock_visible();
-		me._ht_node_bg3.userData.setOpacity(1.00);
+		me._ht_node_bg2.logicBlock_visible();
+		me._ht_node_bg2.userData.setOpacity(1.00);
 		me._ht_node_icon3.userData.setOpacity(1.00);
 		me.elementMouseOver['ht_node_icon3']=false;
 		me._ht_node_custom_image4.logicBlock_visible();
@@ -23947,7 +23947,7 @@ document.addEventListener('keydown', (e) => {
 			me.ggEvent_activehotspotchanged=function() {
 				me._ht_node_preview_bg3.logicBlock_visible();
 				me._ht_node_preview_title3.logicBlock_visible();
-				me._ht_node_bg3.logicBlock_visible();
+				me._ht_node_bg2.logicBlock_visible();
 				me._ht_node_custom_image4.logicBlock_visible();
 			};
 			me.ggEvent_changenode=function() {
@@ -23955,14 +23955,14 @@ document.addEventListener('keydown', (e) => {
 				me._ht_node_preview_bg3.logicBlock_visible();
 					me._ht_node_preview_title3.userData.ggUpdateText();
 				me._ht_node_preview_title3.logicBlock_visible();
-				me._ht_node_bg3.logicBlock_visible();
+				me._ht_node_bg2.logicBlock_visible();
 				me._ht_node_custom_image4.logicBlock_visible();
 			};
 			me.ggEvent_configloaded=function() {
 				me._ht_node.logicBlock_visible();
 				me._ht_node_preview_bg3.logicBlock_visible();
 				me._ht_node_preview_title3.logicBlock_visible();
-				me._ht_node_bg3.logicBlock_visible();
+				me._ht_node_bg2.logicBlock_visible();
 				me._ht_node_custom_image4.logicBlock_visible();
 			};
 			me.ggEvent_varchanged_vis_skin=function() {
